@@ -1,37 +1,48 @@
-const Navbar = ()=>{
-    return(
-<nav class="navbar navbar-expand-lg bg-body-tertiary ">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Self</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul className="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Experiencia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Proyectos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sobre mí</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ☀
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    )
+import styled from "styled-components"
+
+
+const NavbarStyled = styled.div`
+background-color: #dfdede;
+border-radius: 25px;
+display: flex;
+width: 356px;
+margin: auto;
+/* padding: 0 10px; */
+text-align: center;
+justify-content: space-evenly;
+align-items: center;
+font-size: 0.9rem;
+
+button{
+  background-color: transparent;
+  padding: 5px;
+  transition: all 0.1s ease;
+
+
+  &:hover{  transform: scale(1.2); /* Cambia el tamaño en un 10% más grande */}
 }
+
+a{
+  color: #565656;
+  &:hover{color: orange;}
+}
+`
+
+
+const Navbar = () => {
+  return (
+    <NavbarStyled>
+      <a href="/experiencia">Experiencia</a>
+      <a href="/proyectos">Proyectos</a>
+      <a href="/sobreMi">Sobre mí</a>
+      <a href="/contacto">Contacto</a>
+      <button>☀</button>
+    </NavbarStyled>
+
+  )
+
+}
+
+
 
 export default Navbar

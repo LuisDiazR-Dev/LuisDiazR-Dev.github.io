@@ -13,6 +13,7 @@ Based on the designs of:
 
 - React + Vite
 - Bootstrap 5.3
+- Styled-components: 6.1.8
 
 ## Guide to update repository and deploy in [GitHub pages.io](https://pages.github.com/)
 
