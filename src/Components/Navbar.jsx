@@ -1,13 +1,12 @@
 import styled from "styled-components"
 
-
 const NavbarStyled = styled.div`
 background-color: #dfdede;
 border-radius: 25px;
 display: flex;
 width: 356px;
 margin: auto;
-/* padding: 0 10px; */
+padding: 0 10px;
 text-align: center;
 justify-content: space-evenly;
 align-items: center;
@@ -32,17 +31,11 @@ a{
 const Navbar = () => {
   return (
     <NavbarStyled>
-      <a href="/experiencia">Experiencia</a>
+      <a className="text-decoration-none" href="/experiencia">Experiencia</a>
       <a href="/proyectos">Proyectos</a>
       <a href="/sobreMi">Sobre mí</a>
       <a href="/contacto">Contacto</a>
-      <button>☀</button>
     </NavbarStyled>
-
   )
-
 }
-
-
-
 export default Navbar

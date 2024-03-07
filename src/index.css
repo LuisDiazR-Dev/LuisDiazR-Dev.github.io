@@ -5,7 +5,7 @@
   font-size: 1rem;
 
   color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(16, 15, 15, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -17,21 +17,23 @@
 
 a {
   font-weight: 500;
-  color: black;
-  text-decoration: inherit;
+  /* color: crimson; */
+  /* text-decoration: inherit !important; */
+
 }
 
 body {
-  margin: 0;
-  display: flex;
+  /* margin: 0; */
+  /* display: flex; */
   /* place-items: center; */
-  min-width: 550px;
-  min-height: 100vh;
-  /* border: 5px solid green; */
+  /* min-width: 550px; */
+  /* min-height: 100vh; */
+  border: 5px solid green;
+  background-color: red;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3rem;
   line-height: 1.1;
 }
 
