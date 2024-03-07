@@ -1,15 +1,15 @@
 import styled from "styled-components"
 
-const NavbarStyled = styled.div`
+const NavbarStyled = styled.nav`
 background-color: #dfdede;
 border-radius: 25px;
-display: flex;
-width: 356px;
-margin: auto;
-padding: 0 10px;
-text-align: center;
-justify-content: space-evenly;
-align-items: center;
+/* display: flex; */
+/* width: 356px; */
+/* margin: auto; */
+/* padding: 0 10px; */
+/* text-align: center; */
+/* justify-content: space-evenly; */
+/* align-items: center; */
 font-size: 0.9rem;
 
 button{
@@ -22,6 +22,7 @@ button{
 }
 
 a{
+  /* display: inline-block; */
   color: #565656;
   &:hover{color: orange;}
 }
@@ -30,12 +31,15 @@ a{
 
 const Navbar = () => {
   return (
-    <NavbarStyled>
-      <a className="text-decoration-none" href="/experiencia">Experiencia</a>
-      <a href="/proyectos">Proyectos</a>
-      <a href="/sobreMi">Sobre mí</a>
-      <a href="/contacto">Contacto</a>
-    </NavbarStyled>
+    <div className="text-center ">
+      <NavbarStyled className="row  mx-auto mt-3 mb-3  p-2   d-inline-flex  row-cols-auto">
+        <a className='text-decoration-none ' href="/experiencia">Experiencia</a>
+        <a className='text-decoration-none ' href="/proyectos">Proyectos</a>
+        <a className='text-decoration-none ' href="/sobreMi">Sobre mí</a>
+        <a className='text-decoration-none ' href="/contacto">Contacto</a>
+      </NavbarStyled>
+
+    </div>
   )
 }
 export default Navbar

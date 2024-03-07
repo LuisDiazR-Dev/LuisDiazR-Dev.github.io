@@ -28,8 +28,7 @@ body {
   /* place-items: center; */
   /* min-width: 550px; */
   /* min-height: 100vh; */
-  border: 5px solid green;
-  background-color: red;
+  border: 1px solid transparent;
 }
 
 h1 {
