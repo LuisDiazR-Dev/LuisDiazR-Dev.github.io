@@ -1,15 +1,10 @@
 import styled from "styled-components"
 
 const NavbarStyled = styled.nav`
-background-color: #dfdede;
+/* background-color: #dfdede; */
+border: 1px solid #80808055;
+
 border-radius: 25px;
-/* display: flex; */
-/* width: 356px; */
-/* margin: auto; */
-/* padding: 0 10px; */
-/* text-align: center; */
-/* justify-content: space-evenly; */
-/* align-items: center; */
 font-size: 0.9rem;
 
 button{
@@ -33,10 +28,10 @@ const Navbar = () => {
   return (
     <div className="text-center ">
       <NavbarStyled className="row  mx-auto mt-3 mb-3  p-2   d-inline-flex  row-cols-auto">
-        <a className='text-decoration-none ' href="/experiencia">Experiencia</a>
-        <a className='text-decoration-none ' href="/proyectos">Proyectos</a>
-        <a className='text-decoration-none ' href="/sobreMi">Sobre mí</a>
-        <a className='text-decoration-none ' href="/contacto">Contacto</a>
+        <a className='text-decoration-none ' href="https://www.linkedin.com/in/luis-diazr/">Experiencia</a>
+        <a className='text-decoration-none ' href="https://github.com/LuisDiazR-Dev">Proyectos</a>
+        <a className='text-decoration-none ' href="https://www.linkedin.com/in/luis-diazr/">Sobre mí</a>
+        <a className='text-decoration-none ' href="https://www.linkedin.com/in/luis-diazr/">Contacto</a>
       </NavbarStyled>
 
     </div>
