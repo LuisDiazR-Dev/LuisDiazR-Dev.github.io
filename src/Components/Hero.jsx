@@ -37,8 +37,8 @@ export default Hero
 
 
 const SectionStyled = styled.section`
-/* border: 1px solid #80808055; */
 max-width: 60ch;
+/* border: 1px solid #80808055; */
 /* text-wrap: balance; */
 /* text-wrap: pretty; */
 
@@ -48,8 +48,9 @@ img{
 }
 
 strong{
-    /* color: #7E1328; */
     color: crimson;
+    color: #7F1D1D;
+    color: #7E1328;
 }
 a{
     padding-right: 12px;

@@ -5,7 +5,7 @@ const NavbarStyled = styled.nav`
 border: 1px solid #80808055;
 
 border-radius: 25px;
-font-size: 0.9rem;
+font-size: 0.80rem;
 
 button{
   background-color: transparent;
