@@ -43,7 +43,7 @@ Error generating stack: `+o.message+`
 border: 1px solid #80808055;
 
 border-radius: 25px;
-font-size: 0.9rem;
+font-size: 0.80rem;
 
 button{
   background-color: transparent;
@@ -60,8 +60,8 @@ a{
   &:hover{color: orange;}
 }
 `,B_=()=>J.jsx("div",{className:"text-center ",children:J.jsxs(W_,{className:"row  mx-auto mt-3 mb-3  p-2   d-inline-flex  row-cols-auto",children:[J.jsx("a",{className:"text-decoration-none ",href:"https://www.linkedin.com/in/luis-diazr/",children:"Experiencia"}),J.jsx("a",{className:"text-decoration-none ",href:"https://github.com/LuisDiazR-Dev",children:"Proyectos"}),J.jsx("a",{className:"text-decoration-none ",href:"https://www.linkedin.com/in/luis-diazr/",children:"Sobre mí"}),J.jsx("a",{className:"text-decoration-none ",href:"https://www.linkedin.com/in/luis-diazr/",children:"Contacto"})]})}),vn={imgProfile:"https://ludirez.github.io/img/FotoDePerfil.png",name:"Luis Díaz-R",detailsA:"Como ",emphasis:"Desarrollador Web Full Stack",detailsB:", encuentro verdadera satisfacción en la creación continua de soluciones basadas en software sólidas, efectivas, livianas y flexibles.",linkedIn:"https://www.linkedin.com/in/luis-diazr/",gitHub:"https://github.com/LuisDiazR-Dev"},U_=()=>J.jsxs(K_,{class:"",children:[J.jsx("img",{src:vn.imgProfile,alt:"foto de perfil"}),J.jsx("span",{className:"badge rounded-pill text-bg-danger ms-2",children:"Disponible para trabajar"}),J.jsxs("h1",{children:["Hola, Soy ",vn.name," "]}),J.jsxs("p",{children:[vn.detailsA," ",J.jsx("strong",{children:vn.emphasis}),vn.detailsB]}),J.jsx("a",{href:vn.linkedIn,target:"_blank",rel:"noopener noreferrer",children:"LinkedIn"}),J.jsx("a",{href:vn.gitHub,target:"_blank",rel:"noopener noreferrer",children:"GitHub"})]}),K_=Qu.section`
-/* border: 1px solid #80808055; */
 max-width: 60ch;
+/* border: 1px solid #80808055; */
 /* text-wrap: balance; */
 /* text-wrap: pretty; */
 
@@ -71,8 +71,9 @@ img{
 }
 
 strong{
-    /* color: #7E1328; */
     color: crimson;
+    color: #7F1D1D;
+    color: #7E1328;
 }
 a{
     padding-right: 12px;
