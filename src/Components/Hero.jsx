@@ -1,7 +1,31 @@
 import styled from "styled-components"
+import LogoLinkedIn from "./Icons/LinkedIn"
+
+
+const Hero = () => {
+    return (
+        <SectionStyled class="">
+            <img src={about.imgProfile} alt="foto de perfil" />
+            <span className="badge rounded-pill text-bg-danger ms-2">Disponible para trabajar</span>
+
+            <h1>Hola, Soy {about.name} </h1>
+            <p>{about.detailsA} <strong>{about.emphasis}</strong>{about.detailsB}</p>
 
 
 
+            <nav className="d-flex flex-wrap">
+                <LogoLinkedIn /> <a href={about.linkedIn} target="_blank" rel="noopener noreferrer" >{about.logo}LinkedIn</a>
+                <LogoLinkedIn /> <a href={about.gitHub} target="_blank" rel="noopener noreferrer" >GitHub</a>
+            </nav>
+
+
+
+        </SectionStyled >
+
+    )
+}
+
+export default Hero
 
 const about =
 {
@@ -16,23 +40,15 @@ const about =
 }
 
 
-const Hero = () => {
-    return (
-        <SectionStyled class="">
-            <img src={about.imgProfile} alt="foto de perfil" />
-            <span className="badge rounded-pill text-bg-danger ms-2">Disponible para trabajar</span>
 
-            <h1>Hola, Soy {about.name} </h1>
-            <p>{about.detailsA} <strong>{about.emphasis}</strong>{about.detailsB}</p>
 
-            <a href={about.linkedIn} target="_blank" rel="noopener noreferrer" >LinkedIn</a>
-            <a href={about.gitHub} target="_blank" rel="noopener noreferrer" >GitHub</a>
-        </SectionStyled>
 
-    )
-}
 
-export default Hero
+
+
+
+
+
 
 
 
@@ -53,6 +69,7 @@ strong{
     color: #7E1328;
 }
 a{
-    padding-right: 12px;
+    padding:  0 24px 0 4px;
 }
+
 `
