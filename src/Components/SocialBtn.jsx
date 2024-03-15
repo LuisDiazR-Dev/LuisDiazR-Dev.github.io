@@ -37,6 +37,7 @@ const NavSocialStyled = styled.nav`
 
 		color: #727272;
 		border: 1px solid #b4b4b4;
+		border: 1px solid #80808055;
 		/* background-color: darkgray; */
 	}
 	a:hover {

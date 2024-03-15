@@ -1,15 +1,14 @@
 import styled from 'styled-components'
 import About from './About'
 import SocialBtn from './SocialBtn'
-import LogoLinkedIn from './Icons/LinkedIn'
+import Badge from './Badge'
 
 const Hero = () => {
 	return (
-		<SectionStyled class="">
+		<SectionStyled className="mt-5">
 			<img src={About.imgProfile} alt="foto de perfil" />
-			<span className="badge rounded-pill text-bg-danger ms-2">
-				{About.status}
-			</span>
+
+			<Badge />
 
 			<h1>Hola, Soy {About.name} </h1>
 			<p>
@@ -27,12 +26,19 @@ export default Hero
 
 const SectionStyled = styled.section`
 	max-width: 60ch;
+	/* margin-top: 2rem; */
+
 	/* border: 1px solid #80808055; */
 	/* text-wrap: balance; */
 	/* text-wrap: pretty; */
+	h1 {
+		font-weight: bold;
+		font-size: 2.2rem;
+	}
 
 	img {
-		width: 60px;
+		width: 72px;
+		margin-right: 1rem;
 	}
 
 	strong {
