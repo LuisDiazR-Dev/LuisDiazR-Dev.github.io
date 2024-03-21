@@ -5,9 +5,24 @@ const Navbar = () => {
 		<div className="text-center ">
 			<NavbarStyled className="row  mx-auto mt-3 mb-3  p-2   d-inline-flex  row-cols-auto">
 				<a href="https://www.linkedin.com/in/luis-diazr/">Experiencia</a>
-				<a href="https://github.com/LuisDiazR-Dev">Proyectos</a>
-				<a href="https://www.linkedin.com/in/luis-diazr/">Sobre mí</a>
-				<a href="https://www.linkedin.com/in/luis-diazr/">Contacto</a>
+				<a
+					className="pe-none text-body-tertiary "
+					href="https://github.com/LuisDiazR-Dev"
+				>
+					Proyectos
+				</a>
+				<a
+					class="pe-none text-body-tertiary"
+					href="https://www.linkedin.com/in/luis-diazr/"
+				>
+					Sobre mí
+				</a>
+				<a
+					class="pe-none text-body-tertiary"
+					href="https://www.linkedin.com/in/luis-diazr/"
+				>
+					Contacto
+				</a>
 			</NavbarStyled>
 		</div>
 	)
@@ -20,7 +35,7 @@ const NavbarStyled = styled.nav`
 
 	border-radius: 25px;
 	font-weight: 600;
-	/* font-size: 0.75rem; */
+	font-size: 0.9rem;
 
 	button {
 		background-color: transparent;
