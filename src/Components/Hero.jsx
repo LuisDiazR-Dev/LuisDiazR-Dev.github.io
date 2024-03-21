@@ -25,11 +25,11 @@ const Hero = () => {
 export default Hero
 
 const SectionStyled = styled.section`
-	max-width: 60ch;
+	max-width: 80ch;
 	/* margin-top: 2rem; */
 
 	/* border: 1px solid #80808055; */
-	/* text-wrap: balance; */
+	text-wrap: balance;
 	/* text-wrap: pretty; */
 	h1 {
 		font-weight: bold;
@@ -46,5 +46,8 @@ const SectionStyled = styled.section`
 		color: #7f1d1d;
 		color: #7e1328;
 		color: #d02020;
+	}
+	p {
+		font-weight: 600;
 	}
 `
