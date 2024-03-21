@@ -52,6 +52,7 @@ const NavbarStyled = styled.nav`
 		color: #565656;
 		&:hover {
 			color: orange;
+			color: #d02020;
 		}
 	}
 `

@@ -45,5 +45,6 @@ const SectionStyled = styled.section`
 		color: crimson;
 		color: #7f1d1d;
 		color: #7e1328;
+		color: #d02020;
 	}
 `
