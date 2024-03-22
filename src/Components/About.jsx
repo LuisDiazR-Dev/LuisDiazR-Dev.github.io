@@ -29,14 +29,7 @@ const About = {
 			empresa: 'Yoonta',
 			periodo: 'Actualmente',
 			description:
-				'Desarrollo y administro sitios web dinámicos, responsivos y optimizados tanto para SEO como para E-commerce. Destaco por implementar con meticulosidad los diseños de interfaz creados por el equipo.',
-		},
-		{
-			cargo: 'Cargo 2',
-			empresa: 'empresa 2',
-			periodo: 'periodo 2',
-			description:
-				'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit omnis iusto, cupiditate voluptatibus libero animi cum quasi dicta, recusandae fugiat amet error quibusdam dolorem reiciendis eaque quod odio numquam dolore?',
+				'Desarrollo y administro sitios web dinámicos, responsivos y optimizados tanto para SEO como para E-commerce. Destaco por implementar con meticulosidad los diseños de interfaz creados por el equipo y resolución de los problemas del a día.',
 		},
 	],
 }

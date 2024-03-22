@@ -29,11 +29,10 @@ const SectionStyled = styled.section`
 	/* margin-top: 2rem; */
 
 	/* border: 1px solid #80808055; */
-	text-wrap: balance;
 	/* text-wrap: pretty; */
 	h1 {
 		font-weight: bold;
-		font-size: 2.2rem;
+		font-size: 2.7rem;
 	}
 
 	img {

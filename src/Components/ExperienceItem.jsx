@@ -28,7 +28,29 @@ export default ExperienceItem
 
 const ItemStyled = styled.div`
 	border-left: 2px solid #d02020;
-	padding: 0 0 0 12px;
+	padding: 0 0 0 36px;
+	position: relative;
+
+	div.row:before {
+		position: absolute;
+		content: '';
+		display: block;
+		width: 1rem;
+		height: 1rem;
+		background-color: #d02020;
+		border-radius: 50%;
+
+		top: 10px;
+		left: -8px;
+	}
+
+	h3 {
+		color: #d02020;
+		font-weight: 700;
+	}
+	h4 {
+		font-weight: 700;
+	}
 
 	p {
 		/* margin: 0; */

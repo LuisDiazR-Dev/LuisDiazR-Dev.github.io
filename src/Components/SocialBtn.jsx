@@ -29,7 +29,7 @@ const NavSocialStyled = styled.nav`
 	flex-wrap: wrap;
 
 	a {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		font-weight: 600;
 		padding: 4px 12px;
 		margin-top: 4px;
