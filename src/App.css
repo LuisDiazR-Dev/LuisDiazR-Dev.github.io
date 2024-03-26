@@ -16,6 +16,7 @@
   /* border: 1px solid #80808055; */
   padding-bottom: 256px;
   text-wrap: balance;
+
 }
 
 a {
@@ -25,5 +26,6 @@ a {
 h3,
 h4 {
   font-size: 1.2rem !important;
+
 
 }

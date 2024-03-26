@@ -30,6 +30,6 @@ const SectionStyled = styled.section`
 
 	svg {
 		width: 1.8rem;
-		margin-right: 4px;
+		margin-right: 12px;
 	}
 `
