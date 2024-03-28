@@ -12,13 +12,13 @@ const Navbar = () => {
 					Proyectos
 				</a>
 				<a
-					class="pe-none text-body-tertiary"
+					className="pe-none text-body-tertiary"
 					href="https://www.linkedin.com/in/luis-diazr/"
 				>
 					Sobre mí
 				</a>
 				<a
-					class="pe-none text-body-tertiary"
+					className="pe-none text-body-tertiary"
 					href="https://www.linkedin.com/in/luis-diazr/"
 				>
 					Contacto

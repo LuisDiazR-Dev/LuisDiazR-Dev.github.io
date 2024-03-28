@@ -7,7 +7,7 @@ const SocialBtn = () => {
 	return (
 		<NavSocialStyled>
 			{Object.entries(networks).map(([network, data], index) => (
-				<a
+				<AnchorBtn
 					className="d-inline-flex me-3"
 					key={index}
 					href={data.URL}
@@ -16,38 +16,40 @@ const SocialBtn = () => {
 				>
 					{data.logo}
 					{network}
-				</a>
+				</AnchorBtn>
 			))}
 		</NavSocialStyled>
 	)
 }
 
 export default SocialBtn
+export { AnchorBtn }
 
 const NavSocialStyled = styled.nav`
 	display: flex;
 	flex-wrap: wrap;
 
-	a {
-		font-size: 1.1rem;
-		font-weight: 600;
-		padding: 4px 12px;
-		margin-top: 4px;
-		border-radius: 25px;
-
-		color: #727272;
-		border: 1px solid #b4b4b4;
-		border: 1px solid #80808055;
-		/* background-color: darkgray; */
-	}
-	a:hover {
-		color: white;
-		border: 1px solid black;
-		background-color: black;
-	}
-
 	svg {
 		width: 1.2rem;
 		margin-right: 4px;
+	}
+`
+
+const AnchorBtn = styled.a`
+	font-size: 1.1rem;
+	font-weight: 600;
+	padding: 4px 12px;
+	margin-top: 4px;
+	border-radius: 25px;
+
+	color: #727272;
+	border: 1px solid #b4b4b4;
+	border: 1px solid #80808055;
+	/* background-color: darkgray; */
+
+	&:hover {
+		color: white;
+		border: 1px solid black;
+		background-color: black;
 	}
 `

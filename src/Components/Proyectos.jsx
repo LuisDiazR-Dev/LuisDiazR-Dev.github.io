@@ -20,7 +20,6 @@ const Proyectos = () => {
 
 			{/* tabs */}
 			<div className="mt-4">
-				{/* Links */}
 				<ul className="nav nav-tabs">
 					<li className="nav-item">
 						<a
@@ -56,6 +55,12 @@ export default Proyectos
 const SectionStyled = styled.section`
 	/* border: 1px solid red; */
 	margin-top: 96px;
+	justify-content: center;
+	align-items: center;
+	min-height: 512px;
+
+	/* text-align: center; */
+	/* margin: auto; */
 
 	h2 {
 		font-weight: 600;
@@ -66,7 +71,7 @@ const SectionStyled = styled.section`
 		width: 1.8rem;
 		margin-right: 12px;
 	}
-	a {
+	a.nav-link {
 		cursor: pointer;
 		color: gray; /* Color predeterminado */
 		&.active {
@@ -75,6 +80,7 @@ const SectionStyled = styled.section`
 		}
 		&:hover {
 			color: #d02020;
+			background: none;
 		}
 	}
 `

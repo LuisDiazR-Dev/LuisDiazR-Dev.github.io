@@ -1,10 +1,10 @@
+import About from './About'
+import SocialBtn from './SocialBtn'
+
 const ProyectosFullStack = () => {
-	return (
-		<div>
-			<span>Aquí Full Stack</span>
-			<span>proyecto 1</span>
-		</div>
-	)
+	const { Github } = About.networks
+
+	return <SocialBtn github={Github}></SocialBtn>
 }
 
 export default ProyectosFullStack

@@ -49,7 +49,7 @@ const ItemStyled = styled.div`
 		font-weight: 700;
 	}
 	h4 {
-		font-weight: 700;
+		font-weight: 600;
 	}
 
 	p {
