@@ -3,7 +3,7 @@
   "tabWidth": 1,
   "singleQuote": true,
   "semi": false,
-  "printWidth": 80,
+  "printWidth": 180,
   "spaceBeforeFunctionParen": true,
   "ignorePatterns": [
     "node_modules/",

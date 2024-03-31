@@ -7,8 +7,7 @@ const About = {
 	detailsA: 'Como ',
 	emphasis: 'Desarrollador Web Full Stack',
 	//todo meter Self en detalles B
-	detailsB:
-		', encuentro verdadera satisfacción en la creación continua de soluciones basadas en software; Sólidas, Efectivas, Livianas y Flexibles.',
+	detailsB: ', encuentro verdadera satisfacción en la creación continua de soluciones basadas en software; Sólidas, Efectivas, Livianas y Flexibles.',
 
 	networks: {
 		LinkedIn: {
@@ -40,22 +39,20 @@ const About = {
 				description: 'Tienda On-Line',
 				logro:
 					'Implementé y configuré un plugin que optimizó la gestión de pedidos. Esta contribución mejoró la eficiencia interna y la organización de la empresa mediante la limitación de horarios y días específicos para las compras, además de ofrecer la opción de selección de fecha de entrega durante el proceso de pago, asegurando así la precisión en la entrega de los pedidos.',
-				tecnologías: [],
+				technologies: [],
 				webSite: 'https://somosmontevivo.com/',
 			},
 		],
 		fullStack: [
 			{
 				nombre: 'MonteVivo - Tienda On-Line',
-				description:
-					'Mejoré la organización en los tiempos de entrega de los pedidos...',
+				description: 'Mejoré la organización en los tiempos de entrega de los pedidos...',
 				tecnologías: [],
 				webSite: '',
 			},
 			{
 				nombre: 'MonteVivo - Tienda On-Line',
-				description:
-					'Mejoré la organización en los tiempos de entrega de los pedidos...',
+				description: 'Mejoré la organización en los tiempos de entrega de los pedidos...',
 				tecnologías: [],
 				webSite: '',
 			},
