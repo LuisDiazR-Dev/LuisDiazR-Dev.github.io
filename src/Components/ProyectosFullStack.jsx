@@ -1,10 +1,16 @@
 import About from './About'
-import SocialBtn from './SocialBtn'
+import ProyectosItem from './ProyectosItem'
+
+const { proyectos } = About
 
 const ProyectosFullStack = () => {
-	const { Github } = About.networks
-
-	return <SocialBtn github={Github}></SocialBtn>
+	return (
+		<>
+			{proyectos.fullStack.map((proyecto, index) => (
+				<ProyectosItem key={index} proyecto={proyecto} />
+			))}
+		</>
+	)
 }
 
 export default ProyectosFullStack

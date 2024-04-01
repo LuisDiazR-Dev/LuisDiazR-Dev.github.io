@@ -39,22 +39,19 @@ const About = {
 				description: 'Tienda On-Line',
 				logro:
 					'Implementé y configuré un plugin que optimizó la gestión de pedidos. Esta contribución mejoró la eficiencia interna y la organización de la empresa mediante la limitación de horarios y días específicos para las compras, además de ofrecer la opción de selección de fecha de entrega durante el proceso de pago, asegurando así la precisión en la entrega de los pedidos.',
-				technologies: [],
+				technologies: ['Elementor', 'WooCommerce'],
 				webSite: 'https://somosmontevivo.com/',
 			},
 		],
 		fullStack: [
 			{
-				nombre: 'MonteVivo - Tienda On-Line',
-				description: 'Mejoré la organización en los tiempos de entrega de los pedidos...',
-				tecnologías: [],
-				webSite: '',
-			},
-			{
-				nombre: 'MonteVivo - Tienda On-Line',
-				description: 'Mejoré la organización en los tiempos de entrega de los pedidos...',
-				tecnologías: [],
-				webSite: '',
+				img: 'https://media.licdn.com/dms/image/D4E2DAQEn0eCT6OZaIQ/profile-treasury-image-shrink_800_800/0/1709336985524?e=1712548800&v=beta&t=_3fU_H8K5UmJemvUDd1NOMt6Oc0CNS7ghX_QgLBPP1A',
+				nombre: 'Rick and Morty App',
+				description: 'Proyecto integrador desarrollado durante la cursada en Henry.',
+				logro:
+					'App creada con solicitudes a un servidor local que hace uso de una API para mostrar en el Frontend los personajes por numero de ID. Manejando estados globales y locales para agregarlo/eliminado de una sección de "favoritos"',
+				technologies: ['React + vite', 'Redux', 'Node.js', 'Express'],
+				webSite: 'https://github.com/LuisDiazR-Dev/RickAndMorty-app',
 			},
 		],
 	},

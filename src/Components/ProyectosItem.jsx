@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 const ProyectosItem = ({ proyecto }) => {
 	const { img, nombre, description, logro, technologies, webSite } = proyecto
 
-	// Read more stage
+	// Read more state
 	const [isExpanded, setIsExpanded] = useState(false)
 	const toggleText = () => {
 		setIsExpanded(!isExpanded)
@@ -40,22 +40,23 @@ const ProyectosItem = ({ proyecto }) => {
 								</button>
 							</TextArea>
 
-							{/* Si hay una URL del sitio web, puedes agregar un enlace */}
-							{webSite && (
-								<AnchorBtn href={webSite} target="_blank" rel="noopener noreferrer" className="btn btn-outline-dark">
-									Visitar Sitio
-								</AnchorBtn>
-							)}
 							{/* Rendering tecnologías si están disponibles */}
 							{technologies.length > 0 && (
 								<div>
-									<h6>Tecnologías utilizadas:</h6>
+									<h6>Stack</h6>
 									<ul>
 										{technologies.map((technology, index) => (
 											<li key={index}>{technology}</li>
 										))}
 									</ul>
 								</div>
+							)}
+
+							{/* Si hay una URL del sitio web, puedes agregar un enlace */}
+							{webSite && (
+								<AnchorBtn href={webSite} target="_blank" rel="noopener noreferrer" className="btn btn-outline-dark">
+									Visitar Sitio
+								</AnchorBtn>
 							)}
 						</div>
 					</div>
