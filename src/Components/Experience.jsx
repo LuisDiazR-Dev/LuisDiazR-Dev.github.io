@@ -4,7 +4,7 @@ import ExperienceItem from './ExperienceItem'
 
 const Experience = () => {
 	return (
-		<SectionStyled>
+		<SectionStyled id="experience">
 			<div className="experience-title d-flex align-items-center">
 				<BriefCase></BriefCase>
 				<h2 className="">Experiencia laboral</h2>

@@ -12,7 +12,7 @@ const Proyectos = () => {
 	}
 
 	return (
-		<SectionStyled>
+		<SectionStyled id="proyectos">
 			<div className="d-flex align-items-center">
 				<CodeSlash></CodeSlash>
 				<h2 className="">Proyectos</h2>

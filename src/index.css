@@ -10,6 +10,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   /* min-width: 550px; */
   /* min-height: 100vh; */
   border: 1px solid transparent;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -43,3 +45,10 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+/* @media (prefers-reduced-motion:reduce) { 
+  body {
+    scroll-behavior: auto;
+
+  }
+} */
