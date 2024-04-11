@@ -7,13 +7,7 @@ const SocialBtn = () => {
 	return (
 		<NavSocialStyled>
 			{Object.entries(networks).map(([network, data], index) => (
-				<AnchorBtn
-					className="d-inline-flex me-3"
-					key={index}
-					href={data.URL}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
+				<AnchorBtn className="d-inline-flex me-3" key={index} href={data.URL} target="_blank" rel="noopener noreferrer">
 					{data.logo}
 					{network}
 				</AnchorBtn>
@@ -43,6 +37,7 @@ const AnchorBtn = styled.a`
 	border-radius: 25px;
 
 	color: #727272;
+	background-color: white;
 	border: 1px solid #b4b4b4;
 	border: 1px solid #80808055;
 	/* background-color: darkgray; */

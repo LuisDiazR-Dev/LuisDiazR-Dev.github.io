@@ -9,6 +9,7 @@ import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import Experience from './Components/Experience'
 import Proyectos from './Components/Proyectos'
+import SobreMi from './Components/SobreMi'
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 			<Hero></Hero>
 			<Experience></Experience>
 			<Proyectos></Proyectos>
+			<SobreMi></SobreMi>
 		</>
 	)
 }
