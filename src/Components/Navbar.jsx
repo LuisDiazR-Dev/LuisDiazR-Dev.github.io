@@ -10,7 +10,7 @@ const Navbar = () => {
 				<a className=" " href="#proyectos">
 					Proyectos
 				</a>
-				<a className="pe-none text-body-tertiary" href="">
+				<a className="" href="#sobreMi">
 					Sobre mí
 				</a>
 				<a className="pe-none text-body-tertiary" href="https://www.linkedin.com/in/luis-diazr/">

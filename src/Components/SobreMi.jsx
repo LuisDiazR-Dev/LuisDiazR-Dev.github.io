@@ -1,9 +1,14 @@
 import styled from 'styled-components'
+import AboutMeIcon from './Icons/AboutMeIcon'
 
 const SobreMi = () => {
 	return (
-		<SectionStyled>
-			<h2 className="container-fluid">Sobre Mí</h2>
+		<SectionStyled id="sobreMi">
+			<div className="d-flex align-items-center">
+				<AboutMeIcon></AboutMeIcon>
+				<h2 className="">Sobre mí</h2>
+			</div>
+
 			<div className="row mt-3">
 				<div className="col-xs-12 col-sm-8">
 					<p>
@@ -27,7 +32,9 @@ const SobreMi = () => {
 						<span>Estoy emocionado por la oportunidad de colaborar en un entorno desafiante y dinámico.</span>
 					</p>
 				</div>
-				{/* <div className="col-xs-12 col-sm-4">imagen</div> */}
+				<div className=" imgBox col-xs-12 col-sm-4 px-0">
+					<ImgStyled className="rounded" src="/src/assets/logoSelf-RuleTheWorld.jpg" alt="Logo Self" />
+				</div>
 			</div>
 		</SectionStyled>
 	)
@@ -46,5 +53,31 @@ const SectionStyled = styled.section`
 	span {
 		color: crimson;
 		font-weight: 600;
+	}
+	svg {
+		width: 2rem;
+		margin-right: 12px;
+	}
+	div.imgBox {
+		/* border: 1px solid green; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	@media (max-width: 576px) {
+		.row {
+			flex-direction: column-reverse;
+		}
+	}
+`
+const ImgStyled = styled.img`
+	/* border: 1px solid red; */
+	padding: 24px 0;
+
+	@media (min-width: 576px) {
+		transform: rotate(-90deg);
+		width: auto;
+		height: 256px;
+		padding: 24px 0;
 	}
 `
