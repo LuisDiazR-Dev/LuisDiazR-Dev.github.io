@@ -3,8 +3,8 @@ import styled from 'styled-components'
 const Navbar = () => {
 	return (
 		<div className="text-center ">
-			<NavbarStyled className="row  mx-auto mt-3 mb-3  p-2   d-inline-flex  row-cols-auto">
-				<a className=" " href="#experience">
+			<NavbarStyled className="row  mx-auto mt-3 mb-3  p-2   d-inline-flex  row-cols-auto ">
+				<a className="" href="#experience">
 					Experiencia
 				</a>
 				<a className=" " href="#proyectos">
@@ -13,7 +13,7 @@ const Navbar = () => {
 				<a className="" href="#sobreMi">
 					Sobre mí
 				</a>
-				<a className="pe-none text-body-tertiary" href="https://www.linkedin.com/in/luis-diazr/">
+				<a className="" href="#contacto">
 					Contacto
 				</a>
 			</NavbarStyled>

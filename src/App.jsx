@@ -10,6 +10,7 @@ import Hero from './Components/Hero'
 import Experience from './Components/Experience'
 import Proyectos from './Components/Proyectos'
 import SobreMi from './Components/SobreMi'
+import Footer from './Components/zFooter'
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 			<Experience></Experience>
 			<Proyectos></Proyectos>
 			<SobreMi></SobreMi>
+			<Footer></Footer>
 		</>
 	)
 }

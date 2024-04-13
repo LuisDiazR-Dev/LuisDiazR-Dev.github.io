@@ -55,7 +55,7 @@ const SectionStyled = styled.section`
 		margin-bottom: 0;
 	}
 	span {
-		color: crimson;
+		color: #d02020;
 		font-weight: 600;
 	}
 	svg {
