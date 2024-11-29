@@ -1,4 +1,6 @@
-# My portfolio as Full Stack Web Developer
+# My portfolio as Full Stack Web Developer Ver.2
+
+## My portfolio as Full Stack Web Developer
 
 Based on the designs of:
 
