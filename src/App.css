@@ -1,9 +1,28 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
+
+.App {
+  /* display: flex;
+  flex-direction: column;
+  min-height: 100vh; */
+
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+
+  /* Asegura que la app ocupe al menos el alto de la pantalla */
+}
+
+.App main {
+  /* flex-grow: 1; */
+  /* El contenido principal crecerá para ocupar el espacio disponible */
+}
+
+
+
+
+
 
 .logo {
   height: 6em;
@@ -11,9 +30,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +43,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -33,10 +55,13 @@
   }
 }
 
-.card {
-  padding: 2em;
+
+ .card  img{
+  width: auto;
+  height: 50px;
 }
 
+/*
 .read-the-docs {
   color: #888;
-}
+} */
