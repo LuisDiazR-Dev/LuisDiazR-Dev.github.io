@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 import { Button, Navbar } from 'flowbite-react'
 
 // import styled from 'styled-components'
