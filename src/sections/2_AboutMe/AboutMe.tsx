@@ -21,9 +21,9 @@ export const AboutMe = () => {
 					potenciar soluciones de comercio electrónico.
 				</p>
 
-				<button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+				{/* <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
 					Más sobre mi (desplegable)
-				</button>
+				</button> */}
 			</div>
 			<div className="right ">
 				<img

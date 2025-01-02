@@ -3,7 +3,7 @@
 import styled from 'styled-components'
 import { Carousel } from 'flowbite-react'
 
-const Hero = () => {
+export const Hero = () => {
 	// const [count, setCount] = useState(0)
 
 	return (
@@ -24,7 +24,5 @@ const Hero = () => {
 		</HeroStyled>
 	)
 }
-
-export default Hero
 
 const HeroStyled = styled.section``
