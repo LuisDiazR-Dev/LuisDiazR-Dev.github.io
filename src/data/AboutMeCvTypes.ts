@@ -17,6 +17,7 @@ export interface Skills {
 export interface Experience {
 	title: string
 	company: string
+	companyURL: string
 	startDate: string
 	endDate: string
 	description: string[]
@@ -46,6 +47,7 @@ export interface ComplementaryEducation {
 
 export interface AboutMeCv {
 	userName: string
+	alias: string
 	role: string
 	location: string
 	phone: string

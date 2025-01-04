@@ -3,6 +3,7 @@ import { AboutMeCv } from './AboutMeCvTypes'
 export const aboutMeCv: Readonly<AboutMeCv> = Object.freeze({
 	userName: 'Luis Alfredo Díaz Restrepo',
 	role: 'Desarrollador Web Full Stack',
+	alias: 'Luis DíazR-Dev',
 	location: 'Colombia, Cúcuta',
 	phone: '+57 317 5176580',
 	email: 'diazr.info@gmail.com',
@@ -28,8 +29,9 @@ export const aboutMeCv: Readonly<AboutMeCv> = Object.freeze({
 	},
 	experience: [
 		{
-			title: 'Desarrollador Junior WordPress',
+			title: 'Desarrollador WordPress',
 			company: 'Yoonta Leads',
+			companyURL: 'https://www.linkedin.com/company/yoonta/posts/?feedView=all',
 			startDate: 'Ago 2023',
 			endDate: 'Nov 2024',
 			description: [
