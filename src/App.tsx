@@ -10,10 +10,10 @@ function App() {
 	// const [count, setCount] = useState(0)
 
 	return (
-		<div className="App">
+		<div className="App ">
 			<NavMenu />
-			<main>
-				{/* <Hero /> {/* Sliders de marketing */}
+			<main className="px-6">
+				{/* <Hero /> Sliders de marketing */}
 				<AboutMe /> {/* ¿Quien es Luis Díaz? */}
 				<Experience />
 				{/* experience laboral - recuerda la función de tiempo con fecha */}
