@@ -5,6 +5,7 @@ import { AboutMe } from './sections/2_AboutMe/AboutMe'
 import { Experience } from './sections/3_Experience/Experience'
 
 import Footer from './sections/z_Footer/Footer'
+import { Projects } from './sections/4_Projects/Projects'
 
 function App() {
 	// const [count, setCount] = useState(0)
@@ -15,9 +16,9 @@ function App() {
 			<main className="px-6">
 				{/* <Hero /> Sliders de marketing */}
 				<AboutMe /> {/* ¿Quien es Luis Díaz? */}
-				<Experience />
-				{/* experience laboral - recuerda la función de tiempo con fecha */}
+				<Experience /> {/* recuerda la función de tiempo con fecha  */}
 				{/* <Testimonials/> personas que confían en mi trabajo  */}
+				<Projects />
 				{/* <Projects/> Encuentra todo lo que te gusta - proyectos  */}
 				{/* sections Stack tecnológico  */}
 				{/* sections Beneficios de contratarme*/}

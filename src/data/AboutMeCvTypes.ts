@@ -25,6 +25,7 @@ export interface Experience {
 }
 
 export interface Project {
+	tag: string[]
 	name: string
 	type: string
 	description: string[]

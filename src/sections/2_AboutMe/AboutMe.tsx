@@ -16,7 +16,7 @@ export const AboutMe = () => {
 
 				{aboutMeCv.aboutMe.map((item) => {
 					return (
-						<p className="font-normal text-gray-600 dark:text-gray-400">
+						<p className="font-normal text-gray-600 dark:text-gray-400 text-sm ">
 							{item}
 						</p>
 					)
