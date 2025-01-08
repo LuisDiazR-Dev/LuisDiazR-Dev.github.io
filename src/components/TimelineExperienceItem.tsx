@@ -18,7 +18,7 @@ export const TimelineExperienceItem = () => {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								{exp.company}
+								| {exp.company}
 							</a>
 						</h3>
 					</header>
