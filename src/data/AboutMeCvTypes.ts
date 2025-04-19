@@ -1,7 +1,25 @@
+export interface AboutMeCv {
+	userName: string
+	alias: string
+	role: string
+	location: string
+	phone: string
+	email: string
+	aboutMe: string[]
+}
 export interface SocialMedia {
 	linkedInURL: string
 	githubURL: string
-	portfolioURL: string
+}
+export interface Project {
+	id: number
+	name: string
+	type: string[]
+	URL: string
+	description: string[]
+	features: string[]
+	toolsAndTechnologies: string[]
+	tag: string[]
 }
 
 export interface Skills {
@@ -24,21 +42,12 @@ export interface Experience {
 	toolsAndTechnologies: string[]
 }
 
-export interface Project {
-	tag: string[]
-	name: string
-	type: string
-	description: string[]
-	features: string[]
-	toolsAndTechnologies: string[]
-}
-
 export interface Education {
 	title: string
 	institution: string
-	duration: string
+	description: string
+	date: string
 }
-
 export interface ComplementaryEducation {
 	title: string
 	institution: string
@@ -46,19 +55,7 @@ export interface ComplementaryEducation {
 	additionalInfo?: string
 }
 
-export interface AboutMeCv {
-	userName: string
-	alias: string
-	role: string
-	location: string
-	phone: string
-	email: string
-	socialMedia: SocialMedia
-	aboutMe: string[]
-	skills: Skills
-	experience: Experience[]
-	projects: Project[]
-	education: Education[]
-	complementaryEducation: ComplementaryEducation[]
-	languages: string[]
+export interface Languages {
+	español: string
+	inglés: string
 }

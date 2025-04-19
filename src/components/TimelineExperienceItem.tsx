@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import { aboutMeCv } from '../data/AboutMeCV'
+import { experienceList } from '../data/AboutMeCV'
 
 export const TimelineExperienceItem = () => {
 	return (
 		<>
-			{aboutMeCv.experience.map((exp, index) => (
+			{experienceList.map((exp, index) => (
 				<ExperienceItem key={index} className="mb-10 ms-4">
 					<div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
 					<header className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
@@ -27,11 +27,11 @@ export const TimelineExperienceItem = () => {
 							{exp.title}
 						</h4>
 						<p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-							{exp.description[1]}
+							{exp.description[0]}
 						</p>
 					</section>
 					<footer>
-						<a href="#">leer más</a>
+						<a href="#">Leer más</a>
 					</footer>
 				</ExperienceItem>
 			))}
