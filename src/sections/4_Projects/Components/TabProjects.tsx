@@ -1,7 +1,8 @@
-import { Card, Tabs, TabsRef } from 'flowbite-react'
+import { Tabs, TabsRef } from 'flowbite-react'
 import { useRef } from 'react'
-import { HiAdjustments, HiUserCircle } from 'react-icons/hi'
-import { MdDashboard } from 'react-icons/md'
+import { HiAdjustments } from 'react-icons/hi'
+// import { HiAdjustments, HiUserCircle } from 'react-icons/hi'
+// import { MdDashboard } from 'react-icons/md'
 import { GridProjects } from './GridProjects'
 
 export const TabProjects = () => {

@@ -1,4 +1,4 @@
-import { TimelineExperienceItem } from '../../components/TimelineExperienceItem'
+import { TimelineExperienceItem } from '../3_Experience/components/TimelineExperienceItem'
 import styled from 'styled-components'
 
 export const Experience = () => {
