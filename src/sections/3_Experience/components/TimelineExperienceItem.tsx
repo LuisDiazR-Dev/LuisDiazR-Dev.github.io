@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { experienceList } from '../data/AboutMeCV'
+import { experienceList } from '../../../data/AboutMeCV'
 
 export const TimelineExperienceItem = () => {
 	return (
