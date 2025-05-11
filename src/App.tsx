@@ -22,7 +22,7 @@ function App() {
 				{/* <Projects/> Encuentra todo lo que te gusta - proyectos  */}
 				{/* sections Stack tecnológico  */}
 				{/* sections Beneficios de contratarme*/}
-				{/* Sections Blog */}
+				{/* Sections Blog (glosario de términos*/}
 			</main>
 			<Footer />
 		</div>

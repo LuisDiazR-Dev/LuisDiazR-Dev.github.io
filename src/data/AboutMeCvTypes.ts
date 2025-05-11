@@ -14,12 +14,13 @@ export interface SocialMedia {
 export interface Project {
 	id: number
 	name: string
-	type: string[]
-	URL: string
-	description: string[]
+	category: string[]
+	repositoryUrl: string
+	deploymentUrl: string
+	imageUrl: string
+	description: string
 	features: string[]
-	toolsAndTechnologies: string[]
-	tag: string[]
+	technologies: string[]
 }
 
 export interface Skills {

@@ -14,9 +14,12 @@ export const AboutMe = () => {
 					<span className="text-gray-400"> ?</span>
 				</h2>
 
-				{aboutMeCv.aboutMe.map((item) => {
+				{aboutMeCv.aboutMe.map((item, key) => {
 					return (
-						<p className="font-normal text-gray-600 dark:text-gray-400 text-sm ">
+						<p
+							className="font-normal text-gray-600 dark:text-gray-400 text-sm "
+							id={`aboutMe-${key}`}
+						>
 							{item}
 						</p>
 					)
@@ -28,7 +31,7 @@ export const AboutMe = () => {
 			</div>
 			<div className="right ">
 				<img
-					src="https://media.licdn.com/dms/image/v2/D4E35AQGHjXvB96UW1g/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1727140883135?e=1735970400&v=beta&t=Vnf8WpIUsM2IWM1AKGsogQKJkS5LQWx7PhBC83rjsUc"
+					src="https://avatars.githubusercontent.com/u/144191628?v=4"
 					alt="imagen Luis Díaz"
 					className="w-full max-w-sm object-cover rounded-full shadow-md mx-auto"
 				/>
