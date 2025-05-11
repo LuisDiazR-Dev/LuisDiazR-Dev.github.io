@@ -18,7 +18,7 @@ export const aboutMeCv: Readonly<AboutMeCv> = Object.freeze({
 	email: 'diazr.info@gmail.com',
 	aboutMe: [
 		'Desarrollador JavaScript Fullstack con experiencia en React, Node, Express, Redux y PostgreSQL, enfocado en soluciones eficientes, escalables y con diseño limpio.',
-		'Más de 2 años creando e-commerce y landing pages con WordPress, Elementor y WooCommerce, especializado en diseño responsivo y experiencia UI/UX.',
+		'Más de 1 año creando e-commerce y landing pages con WordPress, Elementor y WooCommerce, especializado en diseño responsivo y experiencia UI/UX.',
 		'Experiencia en liderazgo y atención al cliente, con habilidades en comunicación, resolución de problemas y gestión de proyectos.',
 		'Apasionado por la tecnología, el aprendizaje continuo y el desarrollo de software innovador de alto impacto.',
 		'Buscando oportunidades para aplicar mis habilidades y contribuir al éxito de proyectos desafiantes.',
@@ -30,15 +30,16 @@ export const socialMediaLinks: Readonly<SocialMedia> = Object.freeze({
 	githubURL: 'https://github.com/luis-diaz-dev',
 })
 
-export const projectsList: ReadonlyArray<Readonly<Project>> = Object.freeze([
-	Object.freeze({
+export const projectsList: ReadonlyArray<Project> = [
+	{
 		id: 1,
 		name: 'Administrador Residencial',
-		type: ['Full Stack', 'Proyecto Académico'],
-		URL: 'textProject.com',
-		description: [
+		category: ['Full Stack', 'Proyecto Académico'],
+		repositoryUrl: 'https://github.com/LuisDiazR-Dev/PF-PT-Frontend',
+		deploymentUrl: '#',
+		imageUrl: '/images/projects/administrador-residencial.png',
+		description:
 			'Desarrollé y lideré un software web innovador para la administración de condominios, optimizando la gestión de actividades clave.',
-		],
 		features: [
 			'Control y seguimiento de unidades residenciales.',
 			'Gestión de bases de datos de copropietarios.',
@@ -46,99 +47,74 @@ export const projectsList: ReadonlyArray<Readonly<Project>> = Object.freeze([
 			'Gestión de cobros y recepción de pagos.',
 			'Reserva de áreas comunes.',
 		],
-		toolsAndTechnologies: [
-			'PostgreSQL',
-			'Express',
-			'React + Vite',
-			'Node',
-			'Tailwind CSS',
-			'Git - GitHub',
-			'Redux Toolkit',
-			'SCRUM',
-			'Trello',
-			'Vercel',
-			'Railway',
-		],
-		tag: [
+		technologies: [
 			'React',
 			'Redux Toolkit',
 			'Node.js',
 			'Express',
 			'PostgreSQL',
 			'Tailwind CSS',
+			'Vercel',
+			'Railway',
 		],
-	}),
-	Object.freeze({
+	},
+	{
 		id: 2,
-		name: 'Pokemón App',
-		type: ['Full Stack', 'Proyecto Académico'],
-		URL: 'textProject.com',
-		description: [
-			'Desarrollé una aplicación web para buscar y visualizar información de pokémon, consumiendo datos de una API externa desde mi propio servidor Node.js y use PostgreSQL para almacenar información adicional de nuevos pokémon.',
-		],
+		name: 'Pokémon App',
+		category: ['Full Stack', 'Proyecto Académico'],
+		repositoryUrl:
+			'https://github.com/LuisDiazR-Dev/Individual-Project-Pokemon',
+		deploymentUrl: '#',
+		imageUrl: '/images/projects/pokemon-app.png',
+		description:
+			'Aplicación web para buscar y visualizar información de Pokémon, consumiendo una API externa desde un servidor Node.js y almacenando datos adicionales en PostgreSQL.',
 		features: [
 			'Buscador de pokémon por nombre.',
 			'Visualización de detalles de pokémon.',
-			'Creación de nuevos pokémon y favoritos en la sesión iniciada.',
-			'Almacenamiento de nuevos pokémon en base de datos.',
-			'Interfaz de usuario intuitiva y atractiva con filtros, ordenamiento y paginado.',
+			'Creación y almacenamiento de nuevos pokémon.',
+			'Sistema de favoritos.',
+			'Interfaz con filtros, ordenamiento y paginado.',
 		],
-		toolsAndTechnologies: [
-			'PostgreSQL',
-			'Express',
-			'React + Vite',
-			'Node',
-			'Tailwind CSS',
-			'Git - GitHub',
-			'Redux Toolkit',
-			'Vercel',
-			'Railway',
-		],
-		tag: [
+		technologies: [
 			'React',
 			'Redux Toolkit',
 			'Node.js',
 			'Express',
 			'PostgreSQL',
 			'Tailwind CSS',
+			'Vercel',
+			'Railway',
 		],
-	}),
-	Object.freeze({
+	},
+	{
 		id: 3,
 		name: 'Rick & Morty App',
-		type: ['Full Stack', 'Proyecto Académico'],
-		URL: 'textProject.com',
-		description: [
-			'Desarrollé una aplicación web para buscar y visualizar información de personajes de la serie animada Rick & Morty, consumiendo datos de una API externa desde mi propio servidor Node.js y manejando estados globales con Redux Toolkit para la sección de favoritos.',
-		],
+		category: ['Full Stack', 'Proyecto Académico'],
+		repositoryUrl:
+			'https://github.com/LuisDiazR-Dev/RickAndMorty-app/tree/main',
+		deploymentUrl: '#',
+		imageUrl: '/images/projects/rick-and-morty-app.png',
+		description:
+			'Aplicación para buscar y visualizar información de personajes de Rick & Morty, usando API externa y manejo de estados globales con Redux Toolkit.',
 		features: [
-			'Buscador de personajes por ID',
-			'Visualización de detalles de personajes.',
-			'Agregar personajes a favoritos.',
-			'Visualización de personajes favoritos.',
-			'Interfaz de usuario intuitiva y atractiva.',
+			'Buscador de personajes por ID.',
+			'Visualización de detalles.',
+			'Agregar a favoritos.',
+			'Lista de favoritos.',
+			'UI moderna e intuitiva.',
 		],
-		toolsAndTechnologies: [
-			'PostgreSQL',
-			'Express',
-			'React + Vite',
-			'Node',
-			'Tailwind CSS',
-			'Git - GitHub',
-			'Redux Toolkit',
-			'Vercel',
-			'Railway',
-		],
-		tag: [
+		technologies: [
 			'React',
 			'Redux Toolkit',
 			'Node.js',
 			'Express',
 			'PostgreSQL',
 			'Tailwind CSS',
+			'Vercel',
+			'Railway',
 		],
-	}),
-])
+	},
+]
 
 export const skillsList: Readonly<Skills> = Object.freeze({
 	frontEnd: ['HTML', 'JavaScript', 'TypeScript', 'React', 'Redux Toolkit'],
@@ -157,7 +133,7 @@ export const experienceList: ReadonlyArray<Readonly<Experience>> =
 			company: 'Yoonta Leads',
 			companyURL: 'https://www.linkedin.com/company/yoonta/posts/?feedView=all',
 			startDate: 'Mar 2023',
-			endDate: 'actualidad',
+			endDate: 'Sep 2024',
 			description: [
 				'Desarrollo de soluciones de e-commerce y landing pages responsivas y personalizadas utilizando herramientas como Elementor, WooCommerce y Jotform.',
 				'Implementación de soluciones avanzadas con Crocoblock y Jet Engine para mejorar la funcionalidad de los sitios web.',
