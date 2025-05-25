@@ -33,7 +33,7 @@ export const AboutMe = () => {
 				<img
 					src="https://avatars.githubusercontent.com/u/144191628?v=4"
 					alt="imagen Luis Díaz"
-					className="w-full max-w-sm object-cover rounded-full shadow-md mx-auto"
+					className="w-full max-w-sm object-cover rounded-full shadow-md mx-auto mt-8"
 				/>
 			</div>
 		</AboutMeStyled>
