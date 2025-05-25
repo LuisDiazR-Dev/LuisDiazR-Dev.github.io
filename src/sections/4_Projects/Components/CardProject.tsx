@@ -8,7 +8,7 @@ interface CardProjectProps {
 export const CardProject = ({ project }: CardProjectProps) => {
 	return (
 		<Card
-			className="max-w-sm"
+			className="max-w-sm object-contain overflow-hidden border-2 border-red-700 shadow-md dark:border-gray-700"
 			imgAlt={project.name}
 			imgSrc={project.imageUrl} // Cambia esta ruta si tienes una imagen real
 		>

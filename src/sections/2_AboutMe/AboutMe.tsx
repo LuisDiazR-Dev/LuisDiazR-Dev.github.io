@@ -4,8 +4,8 @@ import { aboutMeCv } from '../../data/AboutMeCV'
 
 export const AboutMe = () => {
 	return (
-		<AboutMeStyled className="grid grid-cols-1 md:grid-cols-2 py-6">
-			<div className="left flex flex-col  items-start space-y-4 gap-0 justify-center">
+		<AboutMeStyled className="grid grid-cols-1 md:grid-cols-2 py-6 px-4">
+			<div className="left flex flex-col   space-y-4 gap-0 justify-center">
 				<h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 					<span className="text-gray-400">
 						¿Quien es <br />

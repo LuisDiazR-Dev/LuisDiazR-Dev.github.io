@@ -17,11 +17,11 @@ export const aboutMeCv: Readonly<AboutMeCv> = Object.freeze({
 	phone: '+57 317 5176580',
 	email: 'diazr.info@gmail.com',
 	aboutMe: [
-		'Desarrollador JavaScript Fullstack con experiencia en React, Node, Express, Redux y PostgreSQL, enfocado en soluciones eficientes, escalables y con diseño limpio.',
-		'Más de 1 año creando e-commerce y landing pages con WordPress, Elementor y WooCommerce, especializado en diseño responsivo y experiencia UI/UX.',
-		'Experiencia en liderazgo y atención al cliente, con habilidades en comunicación, resolución de problemas y gestión de proyectos.',
-		'Apasionado por la tecnología, el aprendizaje continuo y el desarrollo de software innovador de alto impacto.',
-		'Buscando oportunidades para aplicar mis habilidades y contribuir al éxito de proyectos desafiantes.',
+		'👨🏻‍💻 Desarrollador JavaScript Fullstack con experiencia en React, Node, Express, Redux y PostgreSQL, enfocado en soluciones eficientes, escalables y con diseño limpio.',
+		'💹 Más de 1 año creando e-commerce y landing pages con WordPress, Elementor y WooCommerce, especializado en diseño responsivo y experiencia UI/UX.',
+		'⚜ Experiencia en liderazgo y atención al cliente, con habilidades en comunicación, resolución de problemas y gestión de proyectos gracias a mi background en el industria textil.',
+		'🔥 Apasionado por la tecnología, el aprendizaje continuo y el desarrollo de software innovador de alto impacto.',
+		'💯 Buscando oportunidades para aplicar mis habilidades y contribuir al éxito de proyectos desafiantes.',
 	],
 })
 
@@ -37,7 +37,8 @@ export const projectsList: ReadonlyArray<Project> = [
 		category: ['Full Stack', 'Proyecto Académico'],
 		repositoryUrl: 'https://github.com/LuisDiazR-Dev/PF-PT-Frontend',
 		deploymentUrl: '#',
-		imageUrl: '/images/projects/administrador-residencial.png',
+		imageUrl:
+			'https://media.licdn.com/dms/image/v2/D4E2DAQE8O6NBvjU7QA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1727150771491?e=1748239200&v=beta&t=fYLl6IttMfRYQndq5vgPrHGfWTvDvdSzIpOuogcPxks',
 		description:
 			'Desarrollé y lideré un software web innovador para la administración de condominios, optimizando la gestión de actividades clave.',
 		features: [
@@ -65,7 +66,8 @@ export const projectsList: ReadonlyArray<Project> = [
 		repositoryUrl:
 			'https://github.com/LuisDiazR-Dev/Individual-Project-Pokemon',
 		deploymentUrl: '#',
-		imageUrl: '/images/projects/pokemon-app.png',
+		imageUrl:
+			'https://media.licdn.com/dms/image/v2/D4E2DAQH1wyBgKJwPsQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1719368812223?e=1748239200&v=beta&t=tjKpZT5rEAidm_nUvnQL2d_CqW6XyO4-drCU-AgAo3M',
 		description:
 			'Aplicación web para buscar y visualizar información de Pokémon, consumiendo una API externa desde un servidor Node.js y almacenando datos adicionales en PostgreSQL.',
 		features: [
@@ -93,7 +95,8 @@ export const projectsList: ReadonlyArray<Project> = [
 		repositoryUrl:
 			'https://github.com/LuisDiazR-Dev/RickAndMorty-app/tree/main',
 		deploymentUrl: '#',
-		imageUrl: '/images/projects/rick-and-morty-app.png',
+		imageUrl:
+			'https://media.licdn.com/dms/image/v2/D4E2DAQEn0eCT6OZaIQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1709336985524?e=1748239200&v=beta&t=xc4DNM4ribviFeCiYQfwRm6CkmAK58VCUpq9yFrTBc8',
 		description:
 			'Aplicación para buscar y visualizar información de personajes de Rick & Morty, usando API externa y manejo de estados globales con Redux Toolkit.',
 		features: [

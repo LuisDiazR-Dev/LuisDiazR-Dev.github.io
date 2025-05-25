@@ -13,7 +13,7 @@ function App() {
 	return (
 		<div className="App ">
 			<NavMenu />
-			<main className="px-6">
+			<main>
 				{/* <Hero /> Sliders de marketing */}
 				<AboutMe /> {/* ¿Quien es Luis Díaz? */}
 				<Experience /> {/* recuerda la función de tiempo con fecha  */}
