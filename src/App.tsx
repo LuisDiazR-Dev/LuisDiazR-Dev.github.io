@@ -8,8 +8,6 @@ import Footer from './sections/z_Footer/Footer'
 import { Projects } from './sections/4_Projects/Projects'
 
 function App() {
-	// const [count, setCount] = useState(0)
-
 	return (
 		<div className="App ">
 			<NavMenu />

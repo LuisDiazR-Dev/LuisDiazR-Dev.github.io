@@ -16,7 +16,7 @@ const Footer = () => {
 
 			<h1>Mi portafolio web con Vite + React + TypeScript</h1>
 			<div className="card">
-				<h3>próximamente estará disponible la versión 2 de mi portafolio</h3>
+				<h3>próximamente estará terminada esta v.2 de mi portafolio</h3>
 				<h3>Te invito a contactarme por mail o LinkedIn</h3>
 				<a href="https://www.linkedin.com/in/luis-diazr/" target="_blank">
 					<img
@@ -46,7 +46,7 @@ const Footer = () => {
 export default Footer
 
 const FooterStyled = styled.section`
-	background-color: #f6f6f6;
+	/* background-color: #f6f6f6; */
 
 	display: flex;
 	flex-direction: column;
