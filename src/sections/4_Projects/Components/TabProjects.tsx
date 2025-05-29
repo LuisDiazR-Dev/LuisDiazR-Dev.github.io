@@ -1,35 +1,76 @@
-import { Tabs, TabsRef } from 'flowbite-react'
-import { useRef } from 'react'
-import { HiAdjustments } from 'react-icons/hi'
-// import { HiAdjustments, HiUserCircle } from 'react-icons/hi'
-// import { MdDashboard } from 'react-icons/md'
+import { useState } from 'react'
+
+import {
+	AllProjectIcon,
+	JavaScriptIcon,
+	WordPressIcon,
+} from '../../../assets/icons'
+
 import { GridProjects } from './GridProjects'
 
 export const TabProjects = () => {
-	const tabsRef = useRef<TabsRef>(null)
+	const [activeTab, setActiveTab] = useState('all-projects')
 
-	// cuando cambie el tab, aplica el filtro con el valor del tab
-	console.log({ tabsRef })
+	const handleTabChange = (tab: string) => {
+		setActiveTab(tab)
+	}
 
 	return (
-		<Tabs
-			className="justify-center border-none"
-			aria-label="Default tabs"
-			variant="default"
-			ref={tabsRef}
-		>
-			{/* <Tabs.Item title="Todos" icon={HiUserCircle}>
-				<span className="font-medium text-gray-800 dark:text-white">
-					Profile tab's associated content
-				</span>
-			</Tabs.Item>
-			<Tabs.Item title="Wordpress" icon={MdDashboard} className="inline-flex">
-				<span className="font-medium text-gray-800 dark:text-white"></span>
-				Settings tab's associated content
-			</Tabs.Item> */}
-			<Tabs.Item title="JavaScript" icon={HiAdjustments}>
-				<GridProjects />
-			</Tabs.Item>
-		</Tabs>
+		<div className="container ">
+			<div className="tab-area border-b border-gray-200 dark:border-gray-700">
+				<ul className="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400 justify-center  ">
+					<li className="me-2">
+						<a
+							onClick={() => handleTabChange('all-projects')}
+							href="#all-projects"
+							aria-current="page"
+							className={`inline-flex items-center justify-center p-4 border-b-2 rounded-t-lg ${
+								activeTab === 'all-projects'
+									? 'text-blue-600 border-blue-600 dark:text-blue-500 dark:border-blue-500'
+									: 'border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+							}`}
+						>
+							<AllProjectIcon />
+							<span className="ps-2">Todos los proyectos</span>
+						</a>
+					</li>
+					<li className="me-2">
+						<a
+							onClick={() => handleTabChange('react')}
+							href="#react.js"
+							aria-current="page"
+							className={`inline-flex items-center justify-center p-4 border-b-2 rounded-t-lg ${
+								activeTab === 'react'
+									? 'text-blue-600 border-blue-600 dark:text-blue-500 dark:border-blue-500'
+									: 'border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+							}`}
+						>
+							<JavaScriptIcon />
+							<span className="ps-2"> React.Js</span>
+						</a>
+					</li>
+					<li className="me-2">
+						<a
+							onClick={() => handleTabChange('wordpress')}
+							href="#wordpress"
+							aria-current="page"
+							className={`inline-flex items-center justify-center p-4 border-b-2 rounded-t-lg ${
+								activeTab === 'wordpress'
+									? 'text-blue-600 border-blue-600 dark:text-blue-500 dark:border-blue-500'
+									: 'border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+							}`}
+						>
+							<WordPressIcon />
+							<span className="ps-2"> WordPress</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div className="render-area">
+				<div className="flex justify-center  gap-4 ">
+					<GridProjects activeTab={activeTab} />
+				</div>
+			</div>
+		</div>
 	)
 }
