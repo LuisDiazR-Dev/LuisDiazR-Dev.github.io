@@ -14,7 +14,7 @@ export const aboutMeCv: Readonly<AboutMeCv> = Object.freeze({
 	alias: 'Luis DíazR-Dev',
 	role: 'Desarrollador Web Full Stack',
 	location: 'Colombia, Cúcuta',
-	phone: '+57 317 5176580',
+	phone: 'https://wa.me/573175176580',
 	email: 'diazr.info@gmail.com',
 	aboutMe: [
 		'👨🏻‍💻 Desarrollador JavaScript Fullstack con experiencia en React, Node, Express, Redux y PostgreSQL, enfocado en soluciones eficientes, escalables y con diseño limpio.',
@@ -34,11 +34,11 @@ export const projectsList: ReadonlyArray<Project> = [
 	{
 		id: 1,
 		name: 'Administrador Residencial',
-		category: ['Full Stack', 'Proyecto Académico'],
+		category: ['React', 'Proyecto Académico'],
 		repositoryUrl: 'https://github.com/LuisDiazR-Dev/PF-PT-Frontend',
-		deploymentUrl: '#',
+		deploymentUrl: '',
 		imageUrl:
-			'https://media.licdn.com/dms/image/v2/D4E2DAQE8O6NBvjU7QA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1727150771491?e=1748239200&v=beta&t=fYLl6IttMfRYQndq5vgPrHGfWTvDvdSzIpOuogcPxks',
+			'https://raw.githubusercontent.com/LuisDiazR-Dev/PF-PT-Frontend/develop/public/Residential%20Logo.jpg',
 		description:
 			'Desarrollé y lideré un software web innovador para la administración de condominios, optimizando la gestión de actividades clave.',
 		features: [
@@ -62,12 +62,12 @@ export const projectsList: ReadonlyArray<Project> = [
 	{
 		id: 2,
 		name: 'Pokémon App',
-		category: ['Full Stack', 'Proyecto Académico'],
+		category: ['React', 'Proyecto Académico'],
 		repositoryUrl:
 			'https://github.com/LuisDiazR-Dev/Individual-Project-Pokemon',
-		deploymentUrl: '#',
+		deploymentUrl: '',
 		imageUrl:
-			'https://media.licdn.com/dms/image/v2/D4E2DAQH1wyBgKJwPsQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1719368812223?e=1748239200&v=beta&t=tjKpZT5rEAidm_nUvnQL2d_CqW6XyO4-drCU-AgAo3M',
+			'https://raw.githubusercontent.com/LuisDiazR-Dev/Individual-Project-Pokemon/main/pokemon.png',
 		description:
 			'Aplicación web para buscar y visualizar información de Pokémon, consumiendo una API externa desde un servidor Node.js y almacenando datos adicionales en PostgreSQL.',
 		features: [
@@ -91,12 +91,11 @@ export const projectsList: ReadonlyArray<Project> = [
 	{
 		id: 3,
 		name: 'Rick & Morty App',
-		category: ['Full Stack', 'Proyecto Académico'],
+		category: ['React', 'Proyecto Académico'],
 		repositoryUrl:
 			'https://github.com/LuisDiazR-Dev/RickAndMorty-app/tree/main',
-		deploymentUrl: '#',
-		imageUrl:
-			'https://media.licdn.com/dms/image/v2/D4E2DAQEn0eCT6OZaIQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1709336985524?e=1748239200&v=beta&t=xc4DNM4ribviFeCiYQfwRm6CkmAK58VCUpq9yFrTBc8',
+		deploymentUrl: '',
+		imageUrl: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
 		description:
 			'Aplicación para buscar y visualizar información de personajes de Rick & Morty, usando API externa y manejo de estados globales con Redux Toolkit.',
 		features: [
@@ -115,6 +114,91 @@ export const projectsList: ReadonlyArray<Project> = [
 			'Tailwind CSS',
 			'Vercel',
 			'Railway',
+		],
+	},
+	{
+		id: 4,
+		name: 'Montevivo',
+		category: ['e-commerce', 'WordPress'],
+		repositoryUrl: '',
+		deploymentUrl: 'https://somosmontevivo.com/',
+		imageUrl:
+			'https://somosmontevivo.com/wp-content/uploads/2021/09/logo-png-768x366.png.webp',
+		description:
+			'E-commerce desarrollado con WordPress, Elementor y WooCommerce, especializado en la venta de verduras y hortalizas orgánicas.',
+		features: [
+			'Diseño responsivo y optimizado para dispositivos móviles.',
+			'Integración de pasarelas de pago seguras.',
+			'Catálogo de productos con descripciones detalladas.',
+			'Sistema de gestión de envíos programados por el cliente.',
+			'Optimización SEO para mejorar la visibilidad en motores de búsqueda.',
+		],
+		technologies: [
+			'wordpress',
+			'Elementor',
+			'WooCommerce',
+			'Jotform',
+			'Crocoblock & Jet Engine',
+			'Adobe Illustrator',
+			'Figma',
+			'Google Workspace',
+			'Loom',
+		],
+	},
+	{
+		id: 5,
+		name: 'Jean Pascal',
+		category: ['e-commerce', 'WordPress'],
+		repositoryUrl: '',
+		deploymentUrl: 'https://jeanpascal.com',
+		imageUrl:
+			'https://www.jeanpascal.com/wp-content/uploads/2025/01/logo-jean-pascal-2.png',
+		description:
+			'E-commerce desarrollado con WordPress, Elementor y WooCommerce, especializado en la venta de perfumes y productos de belleza.',
+		features: [
+			'Diseño responsivo y optimizado para dispositivos móviles.',
+			'Integración de pasarelas de pago seguras.',
+			'Catálogo y filtros de productos con descripciones detalladas.',
+			'cupones de descuento y promociones especiales.',
+			'funnel de ventas para aumentar la conversión.',
+		],
+		technologies: [
+			'wordpress',
+			'Elementor',
+			'WooCommerce',
+			'Jotform',
+			'Crocoblock & Jet Engine',
+			'Adobe Illustrator',
+			'Figma',
+			'Google Workspace',
+			'Loom',
+		],
+	},
+	{
+		id: 6,
+		name: 'Spiti',
+		category: ['Landing page', 'WordPress'],
+		repositoryUrl: '',
+		deploymentUrl: 'https://spiti.com.co/',
+		imageUrl:
+			'https://spiti.com.co/wp-content/uploads/2024/08/logo-SPITI-parque.png',
+		description:
+			'Proyecto inmobiliario desarrollado con WordPress, Elementor y Crocoblock, especializado en la venta de apartamentos de alta gama en Bogota .',
+		features: [
+			'Diseño responsivo y optimizado para dispositivos móviles.',
+			'Integración de formularios de contacto personalizados.',
+			'Galería de imágenes y videos de alta calidad.',
+			'Información detallada sobre los apartamentos y servicios.',
+			'Sistema de reservas y consultas en línea.',
+		],
+		technologies: [
+			'wordpress',
+			'Elementor',
+			'Crocoblock & Jet Engine',
+			'Adobe Illustrator',
+			'Figma',
+			'Google Workspace',
+			'Loom',
 		],
 	},
 ]

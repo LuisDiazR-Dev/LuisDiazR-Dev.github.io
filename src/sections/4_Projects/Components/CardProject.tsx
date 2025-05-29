@@ -25,8 +25,9 @@ export const CardProject = ({ project }: CardProjectProps) => {
 			<header className="h-48 overflow-hidden">
 				<img
 					src={project.imageUrl}
-					alt="Project screenshot"
-					className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+					alt={project.name}
+					loading="lazy"
+					className="w-full h-full object-contain transform hover:scale-105 transition-transform duration-300"
 				/>
 			</header>
 
@@ -49,7 +50,12 @@ export const CardProject = ({ project }: CardProjectProps) => {
 			<footer className="p-4 pt-0">
 				<button
 					className="mt-2 inline-block w-full text-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded hover:bg-blue-700 transition-colors duration-300"
-					onClick={() => window.open(`${project.repositoryUrl}`, '_blank')}
+					onClick={() =>
+						window.open(
+							`${project.repositoryUrl || project.deploymentUrl}`,
+							'_blank'
+						)
+					}
 					rel="noopener noreferrer"
 				>
 					View Project
