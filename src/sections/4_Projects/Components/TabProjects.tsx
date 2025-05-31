@@ -16,7 +16,7 @@ export const TabProjects = () => {
 	}
 
 	return (
-		<div className="container ">
+		<section>
 			<div className="tab-area border-b border-gray-200 dark:border-gray-700">
 				<ul className="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400 justify-center  ">
 					<li className="me-2">
@@ -66,11 +66,7 @@ export const TabProjects = () => {
 					</li>
 				</ul>
 			</div>
-			<div className="render-area">
-				<div className="flex justify-center  gap-4 ">
-					<GridProjects activeTab={activeTab} />
-				</div>
-			</div>
-		</div>
+			<GridProjects activeTab={activeTab} />
+		</section>
 	)
 }
