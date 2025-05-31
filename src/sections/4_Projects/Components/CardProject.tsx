@@ -1,5 +1,7 @@
 import { Project } from '../../../data/AboutMeCvTypes'
+
 import { useState, useEffect, useRef } from 'react'
+import { Badge } from 'flowbite-react'
 
 interface CardProjectProps {
 	project: Project
@@ -21,8 +23,8 @@ export const CardProject = ({ project }: CardProjectProps) => {
 	}, [])
 
 	return (
-		<article className="group w-full max-w-sm md:max-w-xs lg:max-w-sm bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-			<header className="h-48 overflow-hidden">
+		<article className="group w-full max-w-sm md:max-w-xs lg:max-w-sm bg-white dark:bg-gray-800 rounded-xl  shadow-md hover:shadow-xl transition-shadow duration-300 ">
+			<header className="h-48 ">
 				<img
 					src={project.imageUrl}
 					alt={project.name}
@@ -31,7 +33,10 @@ export const CardProject = ({ project }: CardProjectProps) => {
 				/>
 			</header>
 
-			<section className="p-4">
+			<section className="flex flex-col p-4">
+				<div className="flex flex-wrap gap-2">
+					<Badge color="gray">{project.category[0]}</Badge>
+				</div>
 				<h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
 					{project.name}
 				</h2>

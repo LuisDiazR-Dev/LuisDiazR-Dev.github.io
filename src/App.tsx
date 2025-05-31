@@ -13,8 +13,8 @@ function App() {
 			<NavMenu />
 			<main>
 				{/* <Hero /> Sliders de marketing */}
-				<AboutMe /> {/* ¿Quien es Luis Díaz? */}
-				<Experience /> {/* recuerda la función de tiempo con fecha  */}
+				{/* <AboutMe /> ¿Quien es Luis Díaz? */}
+				{/* <Experience /> recuerda la función de tiempo con fecha  */}
 				{/* <Testimonials/> personas que confían en mi trabajo  */}
 				<Projects />
 				{/* <Projects/> Encuentra todo lo que te gusta - proyectos  */}
