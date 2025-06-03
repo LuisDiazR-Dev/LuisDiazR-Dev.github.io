@@ -23,13 +23,13 @@ export const CardProject = ({ project }: CardProjectProps) => {
 	}, [])
 
 	return (
-		<article className="group w-full max-w-sm md:max-w-xs lg:max-w-sm bg-white dark:bg-gray-800 rounded-xl  shadow-md hover:shadow-xl transition-shadow duration-300 ">
+		<article className="group w-full max-w-sm md:max-w-xs lg:max-w-sm bg-white dark:bg-gray-800 rounded-xl  shadow-md hover:shadow-xl  transform hover:scale-95 transition-transform duration-300">
 			<header className="h-48 ">
 				<img
 					src={project.imageUrl}
 					alt={project.name}
 					loading="lazy"
-					className="w-full h-full object-contain transform hover:scale-105 transition-transform duration-300"
+					className="w-full h-full object-contain p-4 "
 				/>
 			</header>
 
