@@ -7,9 +7,12 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Navigation, Autoplay } from 'swiper/modules'
 
 // Importa los estilos de Swiper (esto es muy importante si no los tienes en el CSS global)
-// import 'swiper/css'
-// import 'swiper/css/pagination'
-// import 'swiper/css/navigation'
+// import 'swiper/swiper-bundle.css'
+
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 
 interface GridProjectsProps {
 	activeTab: string
@@ -65,7 +68,7 @@ export const GridProjects = ({ activeTab }: GridProjectsProps) => {
 			// autoplay={{ delay: 3000, disableOnInteraction: false }}
 
 			// velocidad de transición
-			speed={300}
+			speed={250}
 		>
 			{filteredProjects.map((project) => (
 				<SwiperSlide key={project.id}>
