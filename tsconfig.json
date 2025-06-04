@@ -1,7 +1,18 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+	"files": [],
+	"references": [
+		{ "path": "./tsconfig.app.json" },
+		{ "path": "./tsconfig.node.json" }
+		// { "include": ["src"] }
+		// {"include": ["test"]},
+		// {"include": ["scripts"]},
+		// {"include": ["tools"]},
+		// {"include": ["e2e"]},
+		// {"include": ["docs"]},
+		// {"include": ["examples"]},
+		// {"include": ["playground"]},
+		// {"include": ["assets"]},
+		// {"include": ["config"]},
+		// {"include": ["typings"]},
+	]
 }
