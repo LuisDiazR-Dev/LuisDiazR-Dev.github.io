@@ -4,59 +4,55 @@ import { aboutMeCv } from '../../data/AboutMeCV'
 
 export const AboutMe = () => {
 	return (
-		<AboutMeStyled className="grid grid-cols-1 md:grid-cols-2 py-6 px-4">
-			<div className="left flex flex-col   space-y-4 gap-0 justify-center">
+		<AboutMeStyled className="grid grid-cols-1 md:grid-cols-2 px-4 gap-6 items-center">
+			{/* Imagen - visible primero en móvil */}
+			<figure className="order-1 md:order-2 flex justify-center  aspect-square ">
+				<img
+					src="https://avatars.githubusercontent.com/u/144191628?v=4"
+					alt="imagen Luis Díaz"
+					className="w-full max-w-xs object-cover rounded-full"
+				/>
+			</figure>
+
+			{/* Texto - visible segundo en móvil */}
+			<div className="order-2 md:order-1 flex flex-col space-y-4">
 				<h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 					<span className="text-gray-400">
 						¿Quien es <br />
 					</span>
 					{`${aboutMeCv.userName}`}
-					<span className="text-gray-400"> ?</span>
+					<span className="text-gray-400">?</span>
 				</h2>
 
-				{aboutMeCv.aboutMe.map((item, key) => {
-					return (
-						<p
-							className="font-normal text-gray-600 dark:text-gray-400 text-sm "
-							id={`aboutMe-${key}`}
-						>
-							{item}
-						</p>
-					)
-				})}
-
-				{/* <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-					Más sobre mi (desplegable)
-				</button> */}
-			</div>
-			<div className="right ">
-				<img
-					src="https://avatars.githubusercontent.com/u/144191628?v=4"
-					alt="imagen Luis Díaz"
-					className="w-full max-w-sm object-cover rounded-full shadow-md mx-auto mt-8"
-				/>
+				{aboutMeCv.aboutMe.map((item, key) => (
+					<p key={key} className="text-sm text-gray-600 dark:text-gray-400">
+						{item}
+					</p>
+				))}
 			</div>
 		</AboutMeStyled>
 	)
 }
 
 const AboutMeStyled = styled.section`
-	/* border: solid 1px blue; */
-	.left {
-		/* justify-content: center; */
-	}
-	.right {
-		/* border: solid 1px crimson; */
-		/* align-items: center; */
+	figure {
+		margin: 0 auto;
 	}
 
-	.logo {
-		max-height: 80px;
-		margin: auto;
-		padding: 1rem;
+	img {
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.467);
 	}
-	.logosRV {
-		display: flex;
-		gap: 20px;
+	img {
+		@media (max-width: 768px) {
+			max-width: 150px;
+			min-height: 256px;
+			margin-top: 1rem;
+		}
+
+		@media (min-width: 769px) {
+			max-width: 250px;
+			min-height: 350px;
+			max-height: 450px;
+		}
 	}
 `

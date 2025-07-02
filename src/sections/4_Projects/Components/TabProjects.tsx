@@ -36,21 +36,6 @@ export const TabProjects = () => {
 					</li>
 					<li className="me-2">
 						<a
-							onClick={() => handleTabChange('react')}
-							href="#react.js"
-							aria-current="page"
-							className={`inline-flex items-center justify-center p-4 border-b-2 rounded-t-lg ${
-								activeTab === 'react'
-									? 'text-blue-600 border-blue-600 dark:text-blue-500 dark:border-blue-500'
-									: 'border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
-							}`}
-						>
-							<JavaScriptIcon />
-							<span className="ps-2"> React.Js</span>
-						</a>
-					</li>
-					<li className="me-2">
-						<a
 							onClick={() => handleTabChange('wordpress')}
 							href="#wordpress"
 							aria-current="page"
@@ -62,6 +47,21 @@ export const TabProjects = () => {
 						>
 							<WordPressIcon />
 							<span className="ps-2"> WordPress</span>
+						</a>
+					</li>
+					<li className="me-2">
+						<a
+							onClick={() => handleTabChange('react')}
+							href="#react.js"
+							aria-current="page"
+							className={`inline-flex items-center justify-center p-4 border-b-2 rounded-t-lg ${
+								activeTab === 'react'
+									? 'text-blue-600 border-blue-600 dark:text-blue-500 dark:border-blue-500'
+									: 'border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300'
+							}`}
+						>
+							<JavaScriptIcon />
+							<span className="ps-2"> React.Js</span>
 						</a>
 					</li>
 				</ul>
