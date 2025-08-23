@@ -16,7 +16,7 @@ const Footer = () => {
 
 			<h1>Mi portafolio web con Vite + React + TypeScript</h1>
 			<div className="card">
-				<h3>próximamente estará terminada esta v.2 de mi portafolio</h3>
+				<h3>Portafolio V.2 - En construcción </h3>
 				<h3>Te invito a contactarme por mail o LinkedIn</h3>
 				<a href="https://www.linkedin.com/in/luis-diazr/" target="_blank">
 					<img

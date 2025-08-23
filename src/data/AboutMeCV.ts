@@ -12,16 +12,16 @@ import {
 export const aboutMeCv: Readonly<AboutMeCv> = Object.freeze({
 	userName: 'Luis Alfredo Díaz Restrepo',
 	alias: 'Luis DíazR-Dev',
-	role: 'Desarrollador Web Full Stack',
+	role: 'Desarrollador JavaScript Fullstack',
 	location: 'Colombia, Cúcuta',
 	phone: 'https://wa.me/573175176580',
 	email: 'diazr.info@gmail.com',
 	aboutMe: [
-		'👨🏻‍💻 Desarrollador JavaScript Fullstack con experiencia en React, Node, Express, Redux y PostgreSQL, enfocado en soluciones eficientes, escalables y con diseño limpio.',
-		'💹 Más de 1 año creando e-commerce y landing pages con WordPress, Elementor y WooCommerce, especializado en diseño responsivo y experiencia UI/UX.',
-		'⚜ Experiencia en liderazgo y atención al cliente, con habilidades en comunicación, resolución de problemas y gestión de proyectos gracias a mi background en el industria textil.',
-		'🔥 Apasionado por la tecnología, el aprendizaje continuo y el desarrollo de software innovador de alto impacto.',
-		'💯 Buscando oportunidades para aplicar mis habilidades y contribuir al éxito de proyectos desafiantes.',
+		'👨🏻‍💻 Desarrollador Full Stack JavaScript especializado en React, Node.js y PostgreSQL, con experiencia en proyectos integrales que incluyen autenticación, roles de usuario y despliegue en producción.',
+		'💹 Experiencia profesional desarrollando e-commerce y landing pages con WordPress, WooCommerce y Elementor, fortaleciendo mi visión integral del ciclo de vida de un producto digital.',
+		'⚜ Habilidades en liderazgo y trabajo en equipo, aplicando metodologías ágiles (SCRUM) y buenas prácticas de desarrollo (SOLID).',
+		'🔥 Apasionado por la tecnología, el aprendizaje continuo y la creación de soluciones digitales escalables y de alto impacto.',
+		'💯 Buscando oportunidades para aportar valor en equipos dinámicos y proyectos innovadores.',
 	],
 })
 
