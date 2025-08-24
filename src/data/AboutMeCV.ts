@@ -17,7 +17,7 @@ export const aboutMeCv: Readonly<AboutMeCv> = Object.freeze({
 	phone: 'https://wa.me/573175176580',
 	email: 'diazr.info@gmail.com',
 	aboutMe: [
-		'👨🏻‍💻 Especializado en React, Node.js y PostgreSQL, con experiencia en proyectos integrales que incluyen autenticación, roles de usuario y despliegue en producción.',
+		'👨🏻‍💻 Especializado en el desarrollo de aplicaciones web en React, Node.js y PostgreSQL, con experiencia en proyectos integrales que incluyen autenticación, roles de usuario y despliegue en producción.',
 		'💹 Experiencia profesional desarrollando e-commerce y landing pages con WordPress, WooCommerce y Elementor, fortaleciendo mi visión integral del ciclo de vida de un producto digital.',
 		'⚜ Habilidades en liderazgo y trabajo en equipo, aplicando metodologías ágiles (SCRUM) y buenas prácticas de desarrollo (SOLID).',
 		'🔥 Apasionado por la tecnología, el aprendizaje continuo y la creación de soluciones digitales escalables y de alto impacto.',

@@ -14,7 +14,6 @@ const Footer = () => {
 				</a>
 			</div>
 
-			<h1>Mi portafolio web con Vite + React + TypeScript</h1>
 			<div className="card">
 				<h3>Portafolio V.2 - En construcción </h3>
 				<h3>Te invito a contactarme por mail o LinkedIn</h3>
@@ -38,6 +37,13 @@ const Footer = () => {
 						alt="Vite logo"
 					/>
 				</a>
+				<hr className="mb-4 border-gray-300 dark:border-gray-700" />
+				<p className="italic text-gray-700 dark:text-gray-300">
+					“Soluciones digitales sólidas, eficientes, flexibles y ligeras.”
+				</p>
+				<span className="block mt-2 text-xs text-gray-500">
+					© 2025 Luis Díaz Restrepo
+				</span>
 			</div>
 		</FooterStyled>
 	)
