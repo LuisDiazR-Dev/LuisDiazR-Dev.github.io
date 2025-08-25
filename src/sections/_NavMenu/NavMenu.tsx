@@ -26,7 +26,7 @@ export const NavMenu = () => {
 				</div>
 			</Navbar.Brand>
 			<div className="flex md:order-2 md:mx-5  space-x-2">
-				<Button>¡Hablemos!</Button> {/* modal */}
+				<Button href="#footer">¡Hablemos!</Button> {/* modal */}
 				<Navbar.Toggle />
 			</div>
 			<Navbar.Collapse>

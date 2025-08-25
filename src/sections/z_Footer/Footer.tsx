@@ -1,74 +1,125 @@
-import reactLogo from '../../assets/react.svg'
-import viteLogo from '/vite.svg'
-import styled from 'styled-components'
+// import styled from 'styled-components'
+import { Brand } from '../../assets/components/Brand'
 
-const Footer = () => {
+import {
+	Footer,
+	// FooterBrand,
+	FooterCopyright,
+	FooterDivider,
+	// FooterIcon,
+	FooterLink,
+	FooterLinkGroup,
+	FooterTitle,
+} from 'flowbite-react'
+// import {
+// 	BsDribbble,
+// 	BsFacebook,
+// 	BsGithub,
+// 	BsInstagram,
+// 	BsTwitter,
+// } from 'react-icons/bs'
+
+const FooterSection = () => {
 	return (
-		<FooterStyled>
-			<div className="logosRV">
-				<a href="https://vite.dev" target="_blank">
-					<img src={viteLogo} className="logo" alt="Vite logo" />
-				</a>
-				<a href="https://react.dev" target="_blank">
-					<img src={reactLogo} className="logo react" alt="React logo" />
-				</a>
-			</div>
+		<Footer
+			container
+			className="
+			pt-40
+			mx-auto
+			bg-white-100 backdrop-blur-sm 
+			shadow-sm
+		"
+			id="footer"
+		>
+			<div className="w-full">
+				<div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1 font-normal ">
+					<div className="mb-8 ">
+						<Brand />
+						{/* <hr className="mb-4 border-gray-300 dark:border-gray-700" /> */}
+						<p className="italic text-cyan-600 ">
+							Soluciones digitales; Sólidas, Eficientes, Flexibles, Ligeras..
+						</p>
 
-			<div className="card">
-				<h3>Portafolio V.2 - En construcción </h3>
-				<h3>Te invito a contactarme por mail o LinkedIn</h3>
-				<a href="https://www.linkedin.com/in/luis-diazr/" target="_blank">
-					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/LinkedIn_Logo_2013_%282%29.svg/1920px-LinkedIn_Logo_2013_%282%29.svg.png"
-						className="logo"
-						alt="Vite logo"
-					/>
-				</a>
+						<FooterCopyright
+							className="flex italic text-cyan-600"
+							href="#"
+							by="Luis Alfredo Díaz Restrepo"
+							year={2025}
+						/>
+					</div>
+					<div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+						<div>
+							<FooterTitle title="Referencias" />
+							<FooterLinkGroup col>
+								<FooterLink
+									href="https://flowbite-react.com/"
+									target="_blank noreferrer noopener"
+								>
+									Flowbite
+								</FooterLink>
+								<FooterLink
+									href="https://porfolio.dev/#sobre-mi"
+									target="_blank noreferrer noopener"
+								>
+									MiduDev
+								</FooterLink>
+							</FooterLinkGroup>
+						</div>
+						<div>
+							<FooterTitle title="Contactos" />
+							<FooterLinkGroup col>
+								<FooterLink
+									href="https://github.com/LuisDiazR-Dev"
+									target="_blank noreferrer noopener"
+								>
+									Github
+								</FooterLink>
+								<FooterLink
+									href="https://www.linkedin.com/in/luis-diazr/"
+									target="_blank noreferrer noopener"
+								>
+									LinkedIn
+								</FooterLink>
+							</FooterLinkGroup>
+						</div>
+						<div>
+							<FooterTitle title="Servicios" />
+							<FooterLinkGroup col>
+								<FooterLink
+									href="#"
+									className="pointer-events-none cursor-not-allowed text-gray-400"
+								>
+									WordPress
+								</FooterLink>
+								<FooterLink
+									href="#"
+									className="pointer-events-none cursor-not-allowed text-gray-400"
+								>
+									Web App
+								</FooterLink>
+							</FooterLinkGroup>
+						</div>
+					</div>
+				</div>
+				<FooterDivider />
+				<div className="w-full sm:flex sm:items-center sm:justify-between">
+					<span className=" text-sm text-gray-500 sm:text-center">
+						Inspirado midudev | Construido con Flowbite
+						{/* © 2025 Luis Alfredo Díaz Restrepo */}
+						{/* © 2025 Self, Inc. All rights reserved. */}
+						{/* © 2025 Self, Digital Solutions. */}
+					</span>
+					{/* <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+						<FooterIcon href="#" icon={BsFacebook} />
+						<FooterIcon href="#" icon={BsInstagram} />
+						<FooterIcon href="#" icon={BsTwitter} />
+						<FooterIcon href="#" icon={BsGithub} />
+						<FooterIcon href="#" icon={BsDribbble} />
+					</div> */}
+				</div>
 			</div>
-			<div className="card">
-				<h2>También te invito a ver este repositorio en GitHub</h2>
-				<a
-					href="https://github.com/LuisDiazR-Dev/LuisDiazR-Dev.github.io"
-					target="_blank"
-				>
-					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/220px-GitHub_Invertocat_Logo.svg.png"
-						className="logo"
-						alt="Vite logo"
-					/>
-				</a>
-				<hr className="mb-4 border-gray-300 dark:border-gray-700" />
-				<p className="italic text-gray-700 dark:text-gray-300">
-					“Soluciones digitales sólidas, eficientes, flexibles y ligeras.”
-				</p>
-				<span className="block mt-2 text-xs text-gray-500">
-					© 2025 Luis Díaz Restrepo
-				</span>
-			</div>
-		</FooterStyled>
+		</Footer>
 	)
 }
 
-export default Footer
-
-const FooterStyled = styled.section`
-	/* background-color: #f6f6f6; */
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-
-	padding: 4rem;
-
-	.logo {
-		max-height: 80px;
-		margin: auto;
-		padding: 1rem;
-	}
-	.logosRV {
-		display: flex;
-		gap: 20px;
-	}
-`
+export default FooterSection
