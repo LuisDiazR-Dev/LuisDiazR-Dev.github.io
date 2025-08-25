@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { Avatar } from 'flowbite-react'
-import { Badge } from 'flowbite-react'
-import { HiClock } from 'react-icons/hi'
+
+import { Button, ButtonGroup } from 'flowbite-react'
+import { HiCloudDownload, HiUserCircle } from 'react-icons/hi'
 
 // import { aboutMeCv } from '../../data/AboutMeCV'
 
@@ -21,26 +22,43 @@ export const AboutMe = () => {
 				size="lg"
 				className="md:justify-start justify-center mb-4 "
 			>
-				<Badge color="cyan" size="md" icon={HiClock}>
-					Open to Work
-				</Badge>
+				<ButtonGroup>
+					<Button
+						size="xs"
+						className=" bg-gradient-to-br from-purple-600 to-blue-500 text-white hover:bg-gradient-to-bl focus:ring-blue-300 dark:focus:ring-blue-800"
+						href="https://www.linkedin.com/in/luis-diazr/"
+					>
+						<HiUserCircle className="me-2 h-4 w-4" />
+						Open To Work
+					</Button>
+
+					<Button
+						size="xs"
+						// color="light"
+						className="bg-gradient-to-br from-pink-500 to-orange-400 text-white hover:bg-gradient-to-bl focus:ring-pink-200 dark:focus:ring-pink-800"
+						href="https://drive.google.com/file/d/1M7CW87pAWcnEoBLqJmplI-shWN32vasW/view?usp=sharing"
+						target="_blank noreferrer noopener"
+					>
+						Download CV
+						<HiCloudDownload className="ms-2 h-4 w-4" />
+					</Button>
+				</ButtonGroup>
 			</Avatar>
+
 			<div className="mb-2 text-center md:text-left">
 				<h1>Hi there! Soy Luis Díaz</h1>
-				{/* <h2 className="text-cyan-600 dark:text-cyan-400">
-					Desarrollador JavaScript Fullstack
-				</h2> */}
 			</div>
 
 			<p className="max-w-prose text-center md:text-left  dark:text-gray-400">
 				<span className="font-semibold text-cyan-600">
 					Desarrollador JavaScript Fullstack
 				</span>
-				, con +2 años de experiencia en la creación de E-commerce en WordPress y
-				especialización en aplicaciones web modernas con React y Node.js Me
-				apasiona transformar ideas{' '}
+				, con +2 años de experiencia en la creación de E-commerce en WordPress y{' '}
+				<span className="font-semibold text-cyan-600">especializado en </span>
+				aplicaciones web modernas con React y Node.js Me apasiona transformar
+				ideas en{' '}
 				<span className="font-semibold text-cyan-600">
-					en soluciones digitales.
+					soluciones digitales.
 				</span>
 			</p>
 

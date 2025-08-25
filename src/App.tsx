@@ -4,7 +4,7 @@ import { NavMenu } from './sections/_NavMenu/NavMenu'
 import { AboutMe } from './sections/2_AboutMe/AboutMe'
 import { Experience } from './sections/3_Experience/Experience'
 
-import Footer from './sections/z_Footer/Footer'
+import FooterSection from './sections/z_Footer/Footer'
 import { Projects } from './sections/4_Projects/Projects'
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
 				{/* sections Beneficios de contratarme*/}
 				{/* Sections Blog (glosario de términos*/}
 			</main>
-			<Footer />
+			<FooterSection />
 		</div>
 	)
 }
