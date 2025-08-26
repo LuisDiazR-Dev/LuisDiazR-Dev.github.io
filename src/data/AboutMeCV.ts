@@ -26,7 +26,7 @@ export const aboutMeCv: Readonly<AboutMeCv> = Object.freeze({
 })
 
 export const socialMediaLinks: Readonly<SocialMedia> = Object.freeze({
-	linkedInURL: 'https://www.linkedin.com/in/luis-diaz-dev',
+	linkedInURL: 'https://www.linkedin.com/in/luis-diazr/',
 	githubURL: 'https://github.com/luis-diaz-dev',
 })
 
@@ -216,10 +216,45 @@ export const skillsList: Readonly<Skills> = Object.freeze({
 export const experienceList: ReadonlyArray<Readonly<Experience>> =
 	Object.freeze([
 		Object.freeze({
+			title: 'Desarrollador Web Fullstack',
+			company: 'Freelance',
+			companyURL: socialMediaLinks.linkedInURL,
+			startDate: ' Ago 2024',
+			endDate: 'actual',
+			description: [
+				'Desarrollo de aplicaciones web completas utilizando tecnologías modernas como React, Node.js y PostgreSQL.',
+				'Implementación de funcionalidades avanzadas como autenticación de usuarios, roles y permisos para garantizar la seguridad y personalización de las aplicaciones.',
+				'Despliegue de aplicaciones en entornos de producción utilizando plataformas como Vercel y Railway, asegurando un rendimiento óptimo y alta disponibilidad.',
+				'Colaboración con clientes para entender sus necesidades y traducirlas en soluciones técnicas efectivas y escalables.',
+				'Mantenimiento y actualización continua de las aplicaciones para mejorar la funcionalidad y corregir posibles errores.',
+				'Aplicación de metodologías ágiles (SCRUM) para gestionar proyectos de manera eficiente, facilitando la comunicación y colaboración entre los miembros del equipo.',
+				'Implementación de buenas prácticas de desarrollo (SOLID) para asegurar un código limpio, mantenible y escalable.',
+				'Optimización del rendimiento de las aplicaciones mediante técnicas como el lazy loading, memoization y optimización de consultas a la base de datos.',
+				'Creación de documentación técnica detallada para facilitar el mantenimiento y futuras actualizaciones de las aplicaciones.',
+				'Participación en revisiones de código y sesiones de pair programming para mejorar la calidad del código y compartir conocimientos con otros desarrolladores.',
+			],
+			toolsAndTechnologies: [
+				'React',
+				'Redux Toolkit',
+				'Node.js',
+				'Express',
+				'PostgreSQL',
+				'Sequelize',
+				'Tailwind CSS',
+				'Git',
+				'GitHub',
+				'WSL',
+				'Vercel',
+				'Railway',
+				'Slack',
+				'Trello',
+			],
+		}),
+		Object.freeze({
 			title: 'Desarrollador WordPress',
 			company: 'Yoonta Leads',
 			companyURL: 'https://www.linkedin.com/company/yoonta/posts/?feedView=all',
-			startDate: 'Mar 2023',
+			startDate: 'Mar 2023 ',
 			endDate: 'Sep 2024',
 			description: [
 				'Desarrollo de soluciones de e-commerce y landing pages responsivas y personalizadas utilizando herramientas como Elementor, WooCommerce y Jotform.',
