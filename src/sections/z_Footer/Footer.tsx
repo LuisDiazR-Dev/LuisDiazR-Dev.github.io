@@ -37,7 +37,8 @@ const FooterSection = () => {
 						<Brand />
 						{/* <hr className="mb-4 border-gray-300 dark:border-gray-700" /> */}
 						<p className="italic text-cyan-600 ">
-							Soluciones digitales; Sólidas, Eficientes, Flexibles, Ligeras..
+							Soluciones Eficientes, Ligeras y Flexibles para tus Proyectos
+							Digitales.
 						</p>
 
 						<FooterCopyright

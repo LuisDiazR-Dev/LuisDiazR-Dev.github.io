@@ -26,19 +26,27 @@ export const NavMenu = () => {
 				</div>
 			</Navbar.Brand>
 			<div className="flex md:order-2 md:mx-5  space-x-2">
-				<Button href="#footer">¡Hablemos!</Button> {/* modal */}
+				<Button
+					color="gray"
+					className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 text-white hover:bg-gradient-to-br focus:ring-cyan-300 dark:focus:ring-cyan-800"
+					size="sm"
+					href="#footer"
+				>
+					¡Hablemos!
+				</Button>{' '}
+				{/* modal */}
 				<Navbar.Toggle />
 			</div>
 			<Navbar.Collapse>
 				<Navbar.Link href="#" active>
 					Experiencia
 				</Navbar.Link>
-				<Navbar.Link href="#">proyectos</Navbar.Link>
-				<Navbar.Link href="#">Stack</Navbar.Link>
-				<Navbar.Link href="#">Servicios</Navbar.Link>
-				<Navbar.Link href="#" disabled>
+				<Navbar.Link href="#proyectos">Proyectos</Navbar.Link>
+				{/* <Navbar.Link href="#">Servicios</Navbar.Link> */}
+				<Navbar.Link href="#stack">Stack</Navbar.Link>
+				{/* <Navbar.Link href="#" disabled>
 					Tema
-				</Navbar.Link>
+				</Navbar.Link> */}
 			</Navbar.Collapse>
 		</Navbar>
 	)

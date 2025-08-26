@@ -11,51 +11,63 @@ export const AboutMe = () => {
 		<AboutMeStyled
 			id="sobre-mi"
 			className="
-			mt-28 md:mt-40 mx-auto mb-20			
+			mt-40 mx-auto mb-20			
 			scroll-mt-32
 			md:w-9/12  w-full
+			flex flex-col
+			items-center
+
 			"
 		>
 			<Avatar
 				img="https://avatars.githubusercontent.com/u/144191628?v=4"
 				rounded
-				size="lg"
-				className="md:justify-start justify-center mb-4 "
+				size="xl"
+				className="justify-center mb-4 flex flex-col md:flex-row "
 			>
-				<ButtonGroup>
-					<Button
-						size="xs"
-						className=" bg-gradient-to-br from-purple-600 to-blue-500 text-white hover:bg-gradient-to-bl focus:ring-blue-300 dark:focus:ring-blue-800"
-						href="https://www.linkedin.com/in/luis-diazr/"
-					>
-						<HiUserCircle className="me-2 h-4 w-4" />
-						Open To Work
-					</Button>
+				<h1 className="font-bold mb-2">
+					<span className=" text-gray-400">Hey, </span>
+					Soy Luis Díaz
+				</h1>{' '}
+				<div className="text-center md:text-left">
+					<ButtonGroup>
+						<Button
+							size="xs"
+							className=" bg-gradient-to-br from-purple-600 to-blue-500 text-white hover:bg-gradient-to-bl focus:ring-blue-300 dark:focus:ring-blue-800"
+							href="https://www.linkedin.com/in/luis-diazr/"
+						>
+							<HiUserCircle className="me-2 h-4 w-4" />
+							Open To Work
+						</Button>
 
-					<Button
-						size="xs"
-						// color="light"
-						className="bg-gradient-to-br from-pink-500 to-orange-400 text-white hover:bg-gradient-to-bl focus:ring-pink-200 dark:focus:ring-pink-800"
-						href="https://drive.google.com/file/d/1M7CW87pAWcnEoBLqJmplI-shWN32vasW/view?usp=sharing"
-						target="_blank noreferrer noopener"
-					>
-						Download CV
-						<HiCloudDownload className="ms-2 h-4 w-4" />
-					</Button>
-				</ButtonGroup>
+						<Button
+							size="xs"
+							// color="light"
+							className="bg-gradient-to-br from-pink-500 to-orange-400 text-white hover:bg-gradient-to-bl focus:ring-pink-200 dark:focus:ring-pink-800"
+							href="https://drive.google.com/file/d/1M7CW87pAWcnEoBLqJmplI-shWN32vasW/view?usp=sharing"
+							target="_blank noreferrer noopener"
+						>
+							Download CV
+							<HiCloudDownload className="ms-2 h-4 w-4" />
+						</Button>
+					</ButtonGroup>
+				</div>
 			</Avatar>
 
-			<div className="mb-2 text-center md:text-left">
-				<h1>Hi there! Soy Luis Díaz</h1>
-			</div>
+			{/* <div className="mb-2 text-center ">
+				<h1>
+					<span className=" text-gray-400">Hey, </span>
+					Soy Luis Díaz
+				</h1>
+			</div> */}
 
-			<p className="max-w-prose text-center md:text-left  dark:text-gray-400">
+			<p className="max-w-prose text-center mt-4 dark:text-gray-400">
 				<span className="font-semibold text-cyan-600">
 					Desarrollador JavaScript Fullstack
 				</span>
 				, con +2 años de experiencia en la creación de E-commerce en WordPress y{' '}
 				<span className="font-semibold text-cyan-600">especializado en </span>
-				aplicaciones web modernas con React y Node.js Me apasiona transformar
+				aplicaciones web modernas con React y Node.js. Me apasiona transformar
 				ideas en{' '}
 				<span className="font-semibold text-cyan-600">
 					soluciones digitales.
