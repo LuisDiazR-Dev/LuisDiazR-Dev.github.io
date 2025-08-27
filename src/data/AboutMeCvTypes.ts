@@ -23,14 +23,25 @@ export interface Project {
 	technologies: string[]
 }
 
+// Definición de niveles
+export enum SkillLevel {
+	Iniciado = 'Iniciado',
+	Medio = 'Medio',
+	Avanzado = 'Avanzado',
+}
+
+// Tipo de cada skill
+export interface SkillDetail {
+	name: string
+	level: SkillLevel
+	iconUrl: string
+}
+
+// Tipo de la colección
 export interface Skills {
-	frontEnd: string[]
-	cssFrameworks: string[]
-	backEnd: string[]
-	versionControl: string[]
-	agileMethodologies: string[]
-	deployment: string[]
-	other: string[]
+	Core: Record<string, SkillDetail>
+	Complements: Record<string, SkillDetail>
+	NextGoals: Record<string, SkillDetail>
 }
 
 export interface Experience {

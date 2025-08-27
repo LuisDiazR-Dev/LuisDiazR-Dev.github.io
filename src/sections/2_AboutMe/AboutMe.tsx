@@ -11,7 +11,7 @@ export const AboutMe = () => {
 		<AboutMeStyled
 			id="sobre-mi"
 			className="
-			mt-40 mx-auto mb-20			
+			mt-40 mx-auto mb-28			
 			scroll-mt-32
 			md:w-9/12  w-full
 			flex flex-col

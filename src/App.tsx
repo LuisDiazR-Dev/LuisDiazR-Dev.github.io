@@ -6,7 +6,7 @@ import { Experience } from './sections/3_Experience/Experience'
 
 import FooterSection from './sections/z_Footer/Footer'
 import { Projects } from './sections/4_Projects/Projects'
-// import { Stack } from './sections/5_Stack/Stack'
+import { Stack } from './sections/5_Stack/Stack'
 
 function App() {
 	return (
@@ -17,7 +17,7 @@ function App() {
 				<AboutMe /> {/* ¿Quien es Luis Díaz? */}
 				<Experience /> {/*recuerda la función de tiempo con fecha*/}
 				<Projects />
-				{/* <Stack />  */}
+				<Stack />
 				{/* Stack tecnológico */}
 				{/* ¿Qué sé hacer? */}
 				{/* <Testimonials/> personas que confían en mi trabajo  */}
