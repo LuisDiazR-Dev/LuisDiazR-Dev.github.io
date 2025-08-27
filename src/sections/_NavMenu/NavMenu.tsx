@@ -38,7 +38,7 @@ export const NavMenu = () => {
 				<Navbar.Toggle />
 			</div>
 			<Navbar.Collapse>
-				<Navbar.Link href="#" active>
+				<Navbar.Link href="#experiencia" active>
 					Experiencia
 				</Navbar.Link>
 				<Navbar.Link href="#proyectos">Proyectos</Navbar.Link>

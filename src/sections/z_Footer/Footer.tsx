@@ -37,8 +37,8 @@ const FooterSection = () => {
 						<Brand />
 						{/* <hr className="mb-4 border-gray-300 dark:border-gray-700" /> */}
 						<p className="italic text-cyan-600 ">
-							Soluciones Eficientes, Ligeras y Flexibles para tus Proyectos
-							Digitales.
+							Soluciones Digitales Basadas en Software...
+							{/* <br></br>Seguridad, Escalabilidad, Ligereza, Flexibilidad */}
 						</p>
 
 						<FooterCopyright
@@ -105,7 +105,7 @@ const FooterSection = () => {
 				<FooterDivider />
 				<div className="w-full sm:flex sm:items-center sm:justify-between">
 					<span className=" text-sm text-gray-500 sm:text-center">
-						Inspirado midudev | Construido con Flowbite
+						Inspirado Midudev | Construido con Flowbite
 						{/* © 2025 Luis Alfredo Díaz Restrepo */}
 						{/* © 2025 Self, Inc. All rights reserved. */}
 						{/* © 2025 Self, Digital Solutions. */}
