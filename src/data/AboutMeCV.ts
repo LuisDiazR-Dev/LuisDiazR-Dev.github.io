@@ -4,7 +4,6 @@ import {
 	SocialMedia,
 	Skills,
 	SkillLevel,
-	SkillDetail,
 	Experience,
 	Education,
 	ComplementaryEducation,
