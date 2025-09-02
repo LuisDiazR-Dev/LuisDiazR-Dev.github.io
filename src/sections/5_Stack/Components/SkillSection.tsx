@@ -1,23 +1,21 @@
-import React from 'react'
-import { SkillCard } from './SkillCard.tsx'
+import { SkillCard } from './SkillCard'
 import { SkillDetail } from '../../../data/AboutMeCvTypes.ts'
 
-interface SkillSectionProps {
-	title: string
+export const SkillSection = ({
+	skills,
+}: {
 	skills: Record<string, SkillDetail>
+}) => {
+	return (
+		<section className="">
+			<div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 sm:gap-8 justify-items-center">
+				{Object.entries(skills).map(([key, skill]) => (
+					<SkillCard key={key} skill={skill} />
+				))}
+			</div>
+		</section>
+	)
 }
 
-const SkillSection: React.FC<SkillSectionProps> = ({ title, skills }) => (
-	<section className="mb-10">
-		<h2 className="text-xl font-bold mb-6 text-blue-600 dark:text-blue-400">
-			{title}
-		</h2>
-		<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-			{Object.entries(skills).map(([key, skill]) => (
-				<SkillCard key={key} skill={skill} />
-			))}
-		</div>
-	</section>
-)
-
-export default SkillSection
+// Object.entries(skills) convierte el objeto skills en una matriz de pares clave-valor,
+// lo que permite iterar sobre cada habilidad y renderizar un SkillCard para cada una

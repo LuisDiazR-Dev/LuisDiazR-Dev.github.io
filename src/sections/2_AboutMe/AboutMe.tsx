@@ -26,7 +26,7 @@ export const AboutMe = () => {
 				className="justify-center mb-4 flex flex-col md:flex-row "
 			>
 				<h1 className="font-bold mb-2">
-					<span className=" text-gray-400">Hey, </span>
+					<span className=" text-gray-400  font-bold">Hey, </span>
 					Soy Luis Díaz
 				</h1>{' '}
 				<div className="text-center md:text-left">
@@ -62,7 +62,7 @@ export const AboutMe = () => {
 			</div> */}
 
 			<p className="max-w-prose text-center mt-4 dark:text-gray-400">
-				<span className="font-semibold text-cyan-600">
+				<span className="font-semibold text-cyan-600 text-xl">
 					Desarrollador JavaScript Fullstack
 				</span>
 				, con +2 años de experiencia en la creación de E-commerce en WordPress y{' '}

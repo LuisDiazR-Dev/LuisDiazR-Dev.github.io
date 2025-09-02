@@ -1,9 +1,14 @@
 import { Button, Navbar } from 'flowbite-react'
 import { Brand } from '../../assets/components/Brand'
+// import { useState } from 'react'
 
 // import styled from 'styled-components'
 
+// const sections = ['sobre-mi', 'experiencia', 'proyectos', 'stack', 'footer']
+
 export const NavMenu = () => {
+	// const [activeSection, setActiveSection] = useState<string>('sobre-mi')
+
 	return (
 		<Navbar
 			fluid
@@ -11,13 +16,10 @@ export const NavMenu = () => {
 			pt-4
 			md:max-w-fit mx-auto
 			max-w-full
-			
-
 			bg-white-100 backdrop-blur-sm 
 			fixed top-0 left-0 right-0 z-40
 			rounded-full
-			shadow-sm
-						
+			shadow-sm						
 			"
 		>
 			<Navbar.Brand href="#sobre-mi">
