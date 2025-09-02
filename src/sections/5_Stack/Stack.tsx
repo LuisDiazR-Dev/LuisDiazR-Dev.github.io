@@ -1,4 +1,4 @@
-import SkillSection from './Components/SkillSection.tsx'
+import { SkillSection } from './Components/SkillSection.tsx'
 
 import { Button, Card } from 'flowbite-react'
 import { skillsList } from '../../data/AboutMeCV.ts'
@@ -11,9 +11,18 @@ import { HiOutlinePuzzle } from 'react-icons/hi'
 import { HiStar } from 'react-icons/hi'
 
 export const Stack: React.FC = () => {
+	const skills = [
+		{ name: 'JavaScript', level: 'Avanzado', icon: '🟨' },
+		{ name: 'React', level: 'Avanzado', icon: '⚛️' },
+		{ name: 'Node.js', level: 'Intermedio', icon: '🟩' },
+		{ name: 'TailwindCSS', level: 'Avanzado', icon: '🌊' },
+		{ name: 'MongoDB', level: 'Intermedio', icon: '🍃' },
+		{ name: 'WordPress', level: 'Avanzado', icon: '🌐' },
+	]
+
 	return (
 		<section id="stack" className="stack my-20 scroll-mt-32  ">
-			<header className="text-center pb-12   dark:text-white flex items-center justify-center gap-3">
+			<header className="flex items-center justify-center gap-3 text-center pb-12 dark:text-white ">
 				<HiOutlinePuzzle className="text-3xl " />
 				<h2> Tech Stack</h2>
 			</header>
@@ -24,13 +33,13 @@ export const Stack: React.FC = () => {
 					// variant="fullWidth"
 					className="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 justify-center"
 				>
-					<TabItem active title="Core Stack" icon={HiOutlineCode} className="">
+					<TabItem active title="Stack" icon={HiOutlineCode} className="">
 						<SkillSection title="" skills={skillsList.Core} />
 					</TabItem>
-					<TabItem title="Complements" icon={MdDashboard}>
+					<TabItem title="Complementos" icon={MdDashboard}>
 						<SkillSection title="" skills={skillsList.Complements} />
 					</TabItem>
-					<TabItem title="Next Goals" icon={HiStar}>
+					<TabItem title="Próximos Objetivos" icon={HiStar}>
 						<SkillSection title="" skills={skillsList.NextGoals} />
 					</TabItem>
 				</Tabs>
