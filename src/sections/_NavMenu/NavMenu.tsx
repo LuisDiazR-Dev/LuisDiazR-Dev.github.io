@@ -20,14 +20,14 @@ export const NavMenu = () => {
 	}
 
 	// Opcional: si entras con #hash en la URL, setea como activa esa sección
-	// useEffect(() => {
-	// 	const hash = window.location.hash.replace('#', '') as SectionId
-	// 	if (hash === 'experiencia' || hash === 'proyectos' || hash === 'stack') {
-	// 		setActiveSection(hash)
-	// 	} else {
-	// 		setActiveSection(null)
-	// 	}
-	// }, [])
+	useEffect(() => {
+		const hash = window.location.hash.replace('#', '') as SectionId
+		if (hash === 'experiencia' || hash === 'proyectos' || hash === 'stack') {
+			setActiveSection(hash)
+		} else {
+			setActiveSection(null)
+		}
+	}, [])
 
 	const isActive = (id: SectionId) => activeSection === id
 
